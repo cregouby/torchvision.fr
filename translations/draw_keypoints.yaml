@@ -1,0 +1,58 @@
+title:
+  original: Draws Keypoints
+  translation: Trace les point-clefs
+arguments:
+  image:
+    original: ': Tensor of shape (3, H, W) and dtype uint8'
+    translation: ': un Tenseur de taille (3, H, W) et de dtype \code{uint8}'
+  keypoints:
+    original: ': Tensor of shape (N, K, 2) the K keypoints location for each of the
+      N detected poses instance,'
+    translation: ':  un Tenseur de taille (N, K, 2), les K point-clefs pour chacune des
+      N instance de pose.'
+  connectivity:
+    original: ': Vector of pair of keypoints to be connected (currently unavailable)'
+    translation: ': Vecteur des paires de point-clefs à connecter ensemble (non disponible)'
+  colors:
+    original: |-
+      : character vector containing the colors
+      of the boxes or single color for all boxes. The color can be represented as
+      strings e.g. "red" or "#FF00FF". By default, viridis colors are generated for keypoints
+    translation: |-
+      : un vecteur de chaînes de caractères des couleurs des point-clefs,
+      ou de la couleur unique pour tous. Les couleurs sont soit les noms, soit les
+      codes des couleurs comme "red" ou "#FF00FF". Par défaut, les couleurs de la palette \code{viridis} 
+      sont générées pour les point-clefs.
+  radius:
+    original: ': radius of the plotted keypoint.'
+    translation: ': diamètre du point-clef à tracer.'
+  width:
+    original: ': width of line connecting keypoints.'
+    translation: ': largeur de la ligne de connection entre les point-clefs.'
+value:
+  original: |
+    Image Tensor of dtype uint8 with keypoints drawn.
+  translation: |
+    un tenseur Image de dtype uint8 avec les point-clefs tracés.
+description:
+  original: |
+    Draws Keypoints, an object describing a body part (like rightArm or leftShoulder), on given RGB tensor image.
+  translation: |
+    Trace les point-clefs, un objet designant un organe (comme brasDroit ou épauleGauche), sur un tenseur Image.
+examples:
+  original: |
+    if (torch::torch_is_installed()) {
+    \dontrun{
+    image <- torch::torch_randint(190, 255, size = c(3, 360, 360))$to(torch::torch_uint8())
+    keypoints <- torch::torch_randint(low = 60, high = 300, size = c(4, 5, 2))
+    keypoint_image <- draw_keypoints(image, keypoints)
+    tensor_image_browse(keypoint_image)
+    }
+    }
+  translation: ~
+untranslatable:
+- alias
+- name
+- keyword
+- concept
+- usage

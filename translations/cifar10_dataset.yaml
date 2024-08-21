@@ -1,0 +1,55 @@
+title:
+  original: Cifar datasets
+  translation: Jeux de données Cifar
+arguments:
+  root:
+    original: |-
+      (string): Root directory of dataset where directory
+      \code{cifar-10-batches-bin} exists or will be saved to if download is set to TRUE.
+    translation: |-
+      (chaîne): Le répertoire racine dans lequel un sous-répertoire
+      \code{cifar-10-batches-bin} existe ou sera crée pour sauver le jeu de donnée si  \code{download = TRUE}.
+  train:
+    original: |-
+      (bool, optional): If TRUE, creates dataset from training set, otherwise
+      creates from test set.
+    translation: |-
+      (booléen, optionnel): Le jeu de donnée est crée depuis le jeu d'entrainement si  \code{TRUE}, depuis le
+      jeu de test sinon.
+  transform:
+    original: |-
+      (callable, optional): A function/transform that takes in an PIL image
+      and returns a transformed version. E.g, \code{transforms.RandomCrop}
+    translation: |-
+      (fonction, optionnel): Une fonction ou \code{transform} qui prend une image PIL 
+      en entrée et retourne sa version transformée. Exemple \code{transforms.RandomCrop}
+  target_transform:
+    original: |-
+      (callable, optional): A function/transform that takes in the
+      target and transforms it.
+    translation: |-
+      (fonction, optionnel): Une fonction ou \code{transform} qui prend la cible
+      en entrée et la transforme.
+  download:
+    original: |-
+      (bool, optional): If true, downloads the dataset from the internet and
+      puts it in root directory. If dataset is already downloaded, it is not
+      downloaded again.
+    translation: |-
+      (booléen, optionnel): Si \code{TRUE}, télécharge le jeu de donnée depuis internet
+      et l'enregistre dans le répertoire \code{root} si nécessaire.
+description:
+  original: |
+    \href{https://www.cs.toronto.edu/~kriz/cifar.html}{CIFAR10} Dataset.
+
+    Downloads and prepares the CIFAR100 dataset.
+  translation: |
+    \href{https://www.cs.toronto.edu/~kriz/cifar.html}{CIFAR10} Dataset.
+
+   Télécharge et prépare le jeu de données CIFAR100.
+untranslatable:
+- alias
+- name
+- keyword
+- concept
+- usage
