@@ -1,0 +1,20 @@
+title:
+  original: Base loader
+  translation: Chargeur basique
+arguments:
+  path:
+    original: path to the image to load from
+    translation: chemin de l'image à charger
+description:
+  original: |
+    Loads an image using \code{jpeg}, or \code{png} packages depending on the
+    file extension.
+  translation: |
+    Charge une image via les paquets \code{jpeg}, ou \code{png} en fonction de
+    l'extension du fichier.
+untranslatable:
+- alias
+- name
+- keyword
+- concept
+- usage
