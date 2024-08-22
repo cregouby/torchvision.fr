@@ -1,0 +1,74 @@
+title:
+  original: Create an image folder dataset
+  translation: Crée un jeu de données d'images à partir d'un répertoire 
+arguments:
+  root:
+    original: Root directory path.
+    translation: Le répertoire racine des images.
+  transform:
+    original: |-
+      A function/transform that takes in an PIL image and returns
+      a transformed version. E.g, \code{\link[=transform_random_crop]{transform_random_crop()}}.
+    translation: |-
+      Une fonction ou transform qui prends en entrée une image au format PIL
+      et en sort la meme image transformée. Par exemple,
+      \code{\link[=transform_random_crop]{transform_random_crop()}}.
+  target_transform:
+    original: |-
+      A function/transform that takes in the target and
+      transforms it.
+    translation: |-
+      Une fonction ou transform qui prends en entrée la cible et la transforme.
+  loader:
+    original: A function to load an image given its path.
+    translation: Une fonction capable de charger l'image à partir de son chemin
+  is_valid_file:
+    original: |-
+      A function that takes path of an Image file and check if
+      the file is a valid file (used to check of corrupt files)
+    translation: |-
+      Une fonction qui prends en entrée le chemin d'un fichier d'image et
+      vérifie que c'est un fichier valide (sert à détecter les fichiers corrompus)
+description:
+  original: |
+    A generic data loader for images stored in folders.
+    See \code{Details} for more information.
+  translation: |
+    Un chargeur de données pour les images stockées dans des répertoires.
+    Voir les \code{Details} pour plus d'info.
+details:
+  original: |
+    This function assumes that the images for each class are contained
+    in subdirectories of \code{root}. The names of these subdirectories are stored
+    in the \code{classes} attribute of the returned object.
+
+    An example folder structure might look as follows:
+
+    \if{html}{\out{<div class="sourceCode">}}\preformatted{root/dog/xxx.png
+    root/dog/xxy.png
+    root/dog/xxz.png
+
+    root/cat/123.png
+    root/cat/nsdf3.png
+    root/cat/asd932_.png
+    }\if{html}{\out{</div>}}
+  translation: |
+    La fonction repose sur des images stockées dans des sous-répertoires de \code{root} par classe.
+    Le noms des sous-repertoire est pris comme attribut de \code{classes} sur l'objet résultat.
+
+    Par exemple, un répertoire avec la structure suivante:
+
+    \if{html}{\out{<div class="sourceCode">}}\preformatted{root/chien/xxx.png
+    root/chien/xxy.png
+    root/chien/xxz.png
+
+    root/chat/123.png
+    root/chat/nsdf3.png
+    root/chat/asd932_.png
+    }\if{html}{\out{</div>}}
+untranslatable:
+- alias
+- name
+- keyword
+- concept
+- usage

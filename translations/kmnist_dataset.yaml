@@ -1,0 +1,53 @@
+title:
+  original: Kuzushiji-MNIST
+  translation: Kuzushiji-MNIST
+arguments:
+  root:
+    original: |-
+      (string): Root directory of dataset where
+      \code{KMNIST/processed/training.pt} and  \code{KMNIST/processed/test.pt} exist.
+    translation: |-
+      (chaîne): Le répertoire racine qui contient
+      \code{KMNIST/processed/training.pt} et \code{KMNIST/processed/test.pt}.
+  train:
+    original: |-
+      (bool, optional): If TRUE, creates dataset from \code{training.pt},
+      otherwise from \code{test.pt}.
+    translation: |-
+      (booléen): crée le jeu de donnée à partir de \code{training.pt} si TRUE,
+      à partir de \code{test.pt} sinon.
+  transform:
+    original: |-
+      (callable, optional): A function/transform that  takes in an
+      PIL image and returns a transformed version. E.g, \code{transforms.RandomCrop}.
+    translation: |-
+      Une fonction ou transform qui prends en entrée une image au format PIL
+      et en sort la meme image transformée. Par exemple, 
+      \code{\link[=transform_random_crop]{transform_random_crop()}}.
+  target_transform:
+    original: |-
+      (callable, optional): A function/transform that takes
+      in the target and transforms it.
+    translation:  |-
+      Une fonction ou transform qui prends en entrée la cible et la transforme.
+  download:
+    original: |-
+      (bool, optional): If true, downloads the dataset from the
+      internet and puts it in root directory. If dataset is already downloaded,
+      it is not downloaded again.
+    translation: |-
+      (booléen, optionnel): Si \code{TRUE}, télécharge le jeu de donnée depuis internet
+      et l'enregistre dans le répertoire \code{root} si nécessaire.
+description:
+  original: |
+    Prepares the \href{https://github.com/rois-codh/kmnist}{Kuzushiji-MNIST} dataset
+    and optionally downloads it.
+  translation: |
+    Prépare le jeu de données \href{https://github.com/rois-codh/kmnist}{Kuzushiji-MNIST}
+    et le télécharge si nécessaire.
+untranslatable:
+- alias
+- name
+- keyword
+- concept
+- usage
