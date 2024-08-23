@@ -1,25 +1,26 @@
 title:
-  original: Kuzushiji-MNIST
-  translation: Kuzushiji-MNIST
+  original: MNIST dataset
+  translation: Jeu de données MNIST
 arguments:
   root:
     original: |-
       (string): Root directory of dataset where
-      \code{KMNIST/processed/training.pt} and  \code{KMNIST/processed/test.pt} exist.
+      \code{MNIST/processed/training.pt} and  \code{MNIST/processed/test.pt} exist.
     translation: |-
       (chaîne): Le répertoire racine qui contient
-      \code{KMNIST/processed/training.pt} et \code{KMNIST/processed/test.pt}.
+      \code{MNIST/processed/training.pt} et \code{MNIST/processed/test.pt}.
   train:
     original: |-
-      (bool, optional): If TRUE, creates dataset from \code{training.pt},
-      otherwise from \code{test.pt}.
+      (bool, optional): If True, creates dataset from
+      \code{training.pt}, otherwise from \code{test.pt}.
     translation: |-
       (booléen): crée le jeu de donnée à partir de \code{training.pt} si TRUE,
       à partir de \code{test.pt} sinon.
   transform:
     original: |-
       (callable, optional): A function/transform that  takes in an
-      PIL image and returns a transformed version. E.g, \code{\link[=transform_random_crop]{transform_random_crop()}}.
+      PIL image and returns a transformed version. E.g,
+      \code{\link[=transform_random_crop]{transform_random_crop()}}.
     translation: |-
       Une fonction ou transform qui prends en entrée une image au format PIL
       et en sort la meme image transformée. Par exemple, 
@@ -40,10 +41,9 @@ arguments:
       et l'enregistre dans le répertoire \code{root} si nécessaire.
 description:
   original: |
-    Prepares the \href{https://github.com/rois-codh/kmnist}{Kuzushiji-MNIST} dataset
-    and optionally downloads it.
+    Prepares the MNIST dataset and optionally downloads it.
   translation: |
-    Prépare le jeu de données \href{https://github.com/rois-codh/kmnist}{Kuzushiji-MNIST}
+    Prépare le jeu de données MNIST
     et le télécharge si nécessaire.
 untranslatable:
 - alias

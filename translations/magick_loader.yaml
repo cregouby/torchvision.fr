@@ -1,0 +1,18 @@
+title:
+  original: Load an Image using ImageMagick
+  translation: Lit une image avec ImageMagick
+arguments:
+  path:
+    original: path to the image to load from.
+    translation: chemin du fichier d'image.
+description:
+  original: |
+    Load an image located at \code{path} using the \code{{magick}} package.
+  translation: |
+    Lit une image depuis le chemin de fichier \code{path} avec le paquet \code{{magick}}.
+untranslatable:
+- alias
+- name
+- keyword
+- concept
+- usage

@@ -21,7 +21,7 @@ arguments:
       Une fonction ou transform qui prends en entrée la cible et la transforme.
   loader:
     original: A function to load an image given its path.
-    translation: Une fonction capable de charger l'image à partir de son chemin
+    translation: Une fonction capable de lire l'image à partir du chemin de fichier.
   is_valid_file:
     original: |-
       A function that takes path of an Image file and check if

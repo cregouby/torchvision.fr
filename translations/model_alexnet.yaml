@@ -1,0 +1,36 @@
+title:
+  original: AlexNet Model Architecture
+  translation: Le modèle d'architecture AlexNet
+arguments:
+  pretrained:
+    original: '(bool): If TRUE, returns a model pre-trained on ImageNet.'
+    translation: '(booléen): Doit-on renvoyer un modèle préentraîné sur ImageNet.'
+  progress:
+    original: |-
+      (bool): If TRUE, displays a progress bar of the download to
+      stderr.
+    translation: |-
+      (booléen): Doit-on afficher une barre d'avancement du téléchargement.
+  '...':
+    original: |-
+      other parameters passed to the model intializer. currently only
+      \code{num_classes} is used.
+    translation: |-
+      Les autres param^tres passés à l'initialisation du modèle. Pour le moment,
+      seul \code{num_classes} est considéré.
+description:
+  original: |
+    AlexNet model architecture from the
+    \href{https://arxiv.org/abs/1404.5997}{One weird trick...} paper.
+  translation: |
+    Le modèle d'architecture AlexNettel que décrit dans le papier
+    \href{https://arxiv.org/abs/1404.5997}{One weird trick...}.
+seealso:
+  original: "Other models: \n\\code{\\link{model_mobilenet_v2}()},\n\\code{\\link{model_resnet}}\n"
+  translation: "Autres modèles: \n\\code{\\link{model_mobilenet_v2}()},\n\\code{\\link{model_resnet}}\n"
+untranslatable:
+- alias
+- name
+- keyword
+- concept
+- usage
