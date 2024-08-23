@@ -1,6 +1,4 @@
-![](images/clipboard-2663710467.png){width="100"}
-
-# torchvision.fr
+# torchvision.fr <img src='https://torch.mlverse.org/css/images/hex/torchvision.png' align="right" style="width: 15%"/>
 
 <!-- badges: start -->
 
