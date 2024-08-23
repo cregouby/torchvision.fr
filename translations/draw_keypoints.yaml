@@ -4,7 +4,7 @@ title:
 arguments:
   image:
     original: ': Tensor of shape (3, H, W) and dtype uint8'
-    translation: ': un Tenseur de taille (3, H, W) et de dtype \code{uint8}'
+    translation: ': un Tenseur de taille (3, H, W) et de \code{dtype uint8}'
   keypoints:
     original: ': Tensor of shape (N, K, 2) the K keypoints location for each of the
       N detected poses instance,'

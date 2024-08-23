@@ -1,0 +1,25 @@
+title:
+  original: Display image tensor
+  translation: Affiche l'image d'un tenseur
+arguments:
+  image:
+    original: |-
+      \code{torch_tensor()} of shape (1, W, H) for grayscale image or (3, W, H) for color image,
+      of type \code{torch_uint8()} to display
+    translation: |-
+      Un \code{torch_tensor()} de taille (1, W, H) pour une image en niveau de gris, ou (3, W, H) 
+      pour une image en couleur, et de \code{dtype torch_uint8()} à afficher
+  browser:
+    original: argument passed to \link{browseURL}
+    translation: argument passé à \link{browseURL}
+description:
+  original: |
+    Display image tensor into browser
+  translation: |
+    Affiche l'image d'un tenseur dans le navigateur
+untranslatable:
+- alias
+- name
+- keyword
+- concept
+- usage

@@ -1,0 +1,25 @@
+title:
+  original: Display image tensor
+  translation:  Affiche l'image d'un tenseur
+arguments:
+  image:
+    original: |-
+      \code{torch_tensor()} of shape (1, W, H) for grayscale image or (3, W, H) for color image,
+      of type \code{torch_uint8()} to display
+    translation: |-
+      Un \code{torch_tensor()} de taille (1, W, H) pour une image en niveau de gris, ou (3, W, H) 
+      pour une image en couleur, et de \code{dtype torch_uint8()} à afficher
+  animate:
+    original: support animations in the X11 display
+    translation: support des annimations dans la fenêtre X11
+description:
+  original: |
+    Display image tensor onto the X11 device
+  translation: |
+    Affiche l'image d'un tenseur dans une fenêtre X11.
+untranslatable:
+- alias
+- name
+- keyword
+- concept
+- usage

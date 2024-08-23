@@ -16,7 +16,7 @@ arguments:
       other parameters passed to the model intializer. currently only
       \code{num_classes} is used.
     translation: |-
-      Les autres param^tres passés à l'initialisation du modèle. Pour le moment,
+      Les autres paramêtres passés à l'initialisation du modèle. Pour le moment,
       seul \code{num_classes} est considéré.
 description:
   original: |

@@ -1,0 +1,68 @@
+title:
+  original: VGG implementation
+  translation: l'implémentation de VGG
+arguments:
+  pretrained:
+    original: '(bool): If TRUE, returns a model pre-trained on ImageNet'
+    translation: '(booléen): Doit-on renvoyer un modèle préentraîné sur ImageNet.'
+  progress:
+    original: |-
+      (bool): If TRUE, displays a progress bar of the download
+      to stderr
+    translation: |-
+      (booléen): Doit-on afficher une barre d'avancement du téléchargement.
+  '...':
+    original: other parameters passed to the VGG model implementation.
+    translation: Les autres paramêtres passés à l'initialisation du modèle.
+description:
+  original: |
+    VGG models implementations based on
+    \href{https://arxiv.org/pdf/1409.1556}{Very Deep Convolutional Networks For Large-Scale Image Recognition}
+  translation: |
+    L'implémentation des modèles VGG d'après
+    \href{https://arxiv.org/pdf/1409.1556}{Very Deep Convolutional Networks For Large-Scale Image Recognition}
+section{Functions}:
+  original: |-
+    \itemize{
+    \item \code{model_vgg11()}: VGG 11-layer model (configuration "A")
+
+    \item \code{model_vgg11_bn()}: VGG 11-layer model (configuration "A") with batch normalization
+
+    \item \code{model_vgg13()}: VGG 13-layer model (configuration "B")
+
+    \item \code{model_vgg13_bn()}: VGG 13-layer model (configuration "B") with batch normalization
+
+    \item \code{model_vgg16()}: VGG 13-layer model (configuration "D")
+
+    \item \code{model_vgg16_bn()}: VGG 13-layer model (configuration "D") with batch normalization
+
+    \item \code{model_vgg19()}: VGG 19-layer model (configuration "E")
+
+    \item \code{model_vgg19_bn()}: VGG 19-layer model (configuration "E") with batch normalization
+
+    }
+  translation: |-
+    \itemize{
+    \item \code{model_vgg11()}: Le modèle VGG 11-couches (configuration "A")
+
+    \item \code{model_vgg11_bn()}: Le modèle VGG 11-couches (configuration "A") avec normalisation par lots
+
+    \item \code{model_vgg13()}: Le modèle VGG 13-couches (configuration "B")
+
+    \item \code{model_vgg13_bn()}: Le modèle VGG 13-couches (configuration "B") avec normalisation par lots
+
+    \item \code{model_vgg16()}: Le modèle VGG 13-couches (configuration "D")
+
+    \item \code{model_vgg16_bn()}: Le modèle VGG 13-couches (configuration "D") avec normalisation par lots
+
+    \item \code{model_vgg19()}: Le modèle VGG 19-couches (configuration "E")
+
+    \item \code{model_vgg19_bn()}: Le modèle VGG 19-couches (configuration "E") avec normalisation par lots
+
+    }
+untranslatable:
+- alias
+- name
+- keyword
+- concept
+- usage

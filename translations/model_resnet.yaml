@@ -1,0 +1,86 @@
+title:
+  original: ResNet implementation
+  translation: L'implémentation de ResNet
+arguments:
+  pretrained:
+    original: '(bool): If TRUE, returns a model pre-trained on ImageNet.'
+    translation: '(booléen): Doit-on renvoyer un modèle préentraîné sur ImageNet.'
+  progress:
+    original: |-
+      (bool): If TRUE, displays a progress bar of the download to
+      stderr.
+    translation: |-
+      (booléen): Doit-on afficher une barre d'avancement du téléchargement.
+  '...':
+    original: Other parameters passed to the resnet model.
+    translation: Les autres paramêtres passés à l'initialisation du modèle.
+description:
+  original: |
+    ResNet models implementation from
+    \href{https://arxiv.org/pdf/1512.03385}{Deep Residual Learning for Image Recognition} and later
+    related papers (see Functions)
+  translation: |
+    L'implémentation des modèles ResNet d'après
+    \href{https://arxiv.org/pdf/1512.03385}{Deep Residual Learning for Image Recognition} et suivants
+    (see Functions)
+section{Functions}:
+  original: |-
+    \itemize{
+    \item \code{model_resnet18()}: ResNet 18-layer model
+
+    \item \code{model_resnet34()}: ResNet 34-layer model
+
+    \item \code{model_resnet50()}: ResNet 50-layer model
+
+    \item \code{model_resnet101()}: ResNet 101-layer model
+
+    \item \code{model_resnet152()}: ResNet 152-layer model
+
+    \item \code{model_resnext50_32x4d()}: ResNeXt-50 32x4d model from \href{https://arxiv.org/pdf/1611.05431}{"Aggregated Residual Transformation for Deep Neural Networks"}
+    with 32 groups having each a width of 4.
+
+    \item \code{model_resnext101_32x8d()}: ResNeXt-101 32x8d model from \href{https://arxiv.org/pdf/1611.05431}{"Aggregated Residual Transformation for Deep Neural Networks"}
+    with 32 groups having each a width of 8.
+
+    \item \code{model_wide_resnet50_2()}: Wide ResNet-50-2 model from \href{https://arxiv.org/pdf/1605.07146}{"Wide Residual Networks"}
+    with width per group of 128.
+
+    \item \code{model_wide_resnet101_2()}: Wide ResNet-101-2 model from \href{https://arxiv.org/pdf/1605.07146}{"Wide Residual Networks"}
+    with width per group of 128.
+
+    }
+  translation: |-
+    \itemize{
+    \item \code{model_resnet18()}: Le modèle ResNet 18-couches
+
+    \item \code{model_resnet34()}: Le modèle ResNet 34-couches 
+
+    \item \code{model_resnet50()}: Le modèle ResNet 50-couches
+
+    \item \code{model_resnet101()}: Le modèle ResNet 101-couches 
+
+    \item \code{model_resnet152()}: Le modèle ResNet 152-couches
+
+    \item \code{model_resnext50_32x4d()}: Le modèle ResNeXt-50 32x4d d'après \href{https://arxiv.org/pdf/1611.05431}{"Aggregated Residual Transformation for Deep Neural Networks"}
+    avec 32 groupes, chacun de largeur 4.
+
+    \item \code{model_resnext101_32x8d()}: Le modèle ResNeXt-101 32x8d d'après \href{https://arxiv.org/pdf/1611.05431}{"Aggregated Residual Transformation for Deep Neural Networks"}
+    avec 32 groupes, chacun de largeur 8.
+
+    \item \code{model_wide_resnet50_2()}: Le modèle Wide ResNet-50-2 d'après \href{https://arxiv.org/pdf/1605.07146}{"Wide Residual Networks"}
+    avec une largeur par groupe de 128.
+
+    \item \code{model_wide_resnet101_2()}: Le modèle Wide ResNet-101-2  d'après \href{https://arxiv.org/pdf/1605.07146}{"Wide Residual Networks"}
+    avec une largeur par groupe de 128.
+
+    }
+
+seealso:
+  original: "Other models: \n\\code{\\link{model_alexnet}()},\n\\code{\\link{model_mobilenet_v2}()}\n"
+  translation: ~
+untranslatable:
+- alias
+- name
+- keyword
+- concept
+- usage

@@ -1,0 +1,27 @@
+title:
+  original: Tiny ImageNet dataset
+  translation: Jeu de données mini Imagenet 
+arguments:
+  root:
+    original: directory path to download the dataset.
+    translation: Le répertoire racine où télécharger le jeu de données.
+  split:
+    original: dataset split, \code{train}, \code{validation} or \code{test}.
+    translation: le sous-ensemble du jeu de données, parmi \code{train}, \code{validation} ou \code{test}
+  download:
+    original: whether to download or not the dataset.
+    translation: doit-on télécharger le jeu de données depuis internet.
+  '...':
+    original: other arguments passed to \code{\link[=image_folder_dataset]{image_folder_dataset()}}.
+    translation: autres paramêtres passés à \code{\link[=image_folder_dataset]{image_folder_dataset()}}.
+description:
+  original: |
+    Prepares the Tiny ImageNet dataset and optionally downloads it.
+  translation: |
+    Prépare le jeu de données mini Imagenet et le télécharge si nécessaire.
+untranslatable:
+- alias
+- name
+- keyword
+- concept
+- usage
