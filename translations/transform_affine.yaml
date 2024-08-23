@@ -4,7 +4,7 @@ title:
 arguments:
   img:
     original: A \code{magick-image}, \code{array} or \code{torch_tensor}.
-    translation: Une \code{magick-image}, \code{array} ou un \code{torch_tensor}.
+    translation: Une image \code{magick}, une \code{array} ou un \code{torch_tensor}.
   angle:
     original: |-
       (float or int): rotation angle value in degrees,
@@ -31,7 +31,7 @@ arguments:
       scale is randomly sampled from the range a <= scale <= b. Will keep
       original scale by default.
     translation: |-
-      (paire de valeurs, optional): intervale du facteur d'agrandissement. Par exemple
+      (paire de valeurs, optionnel): intervale du facteur d'agrandissement. Par exemple
       pour \code{scale=c(a, b)}, alors l'aggrandissement sera choisi dans
       a <= scale <= b. Pas d'aggrandissement par défaut.
   shear:
@@ -44,7 +44,7 @@ arguments:
       shear in \verb{(shear[1], shear[2])} and y-axis shear in \verb{(shear[3], shear[4])}
       will be applied. Will not apply shear by default.
     translation: |-
-      (valeur, paire de valeurs, ou quadruplet de valeurs, optional): Valeurs limites
+      (valeur, paire de valeurs, ou quadruplet de valeurs, optionnel): Valeurs limites
       de cisaillement. Pour une valeur, un cisaillement paralèlle à l'axe des x sera 
       choisit dans l'intervalle (-shear, +shear). Pour une paire de valeurs, un
       cisaillement paralèlle à l'axe des x sera choisit dans l'intervalle \verb{(shear[1], shear[2])}.

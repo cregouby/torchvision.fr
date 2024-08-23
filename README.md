@@ -28,7 +28,8 @@ Sys.setenv(LANGUAGE = "fr")
 library(torchvision.fr)
 
 # consulte l'aide normalement
-??lr_finder
+?transform_affine
 ```
 
-![exemple de page de documentation en français dans l'onglet Help de RStudio](images/clipboard-1010983901.png)
+![exemple de page de documentation en français dans l'onglet Help de RStudio](images/clipboard-2721924466.png)
+

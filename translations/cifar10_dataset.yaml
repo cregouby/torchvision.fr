@@ -46,7 +46,7 @@ description:
   translation: |
     \href{https://www.cs.toronto.edu/~kriz/cifar.html}{CIFAR10} Dataset.
 
-   Télécharge et prépare le jeu de données CIFAR100.
+    Télécharge et prépare le jeu de données CIFAR100.
 untranslatable:
 - alias
 - name
