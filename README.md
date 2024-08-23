@@ -1,14 +1,16 @@
+![](images/clipboard-2663710467.png){width="100"}
+
 # torchvision.fr
 
 <!-- badges: start -->
 
 <!-- badges: end -->
 
-Le paquet d'internationalisation de {torchvision} en français (fr_FR)
+Le paquet d'internationalisation de **{torchvision}** en français (fr_FR)
 
 ## Installation
 
-Vous pouvez installer la version de development de {torchvision.fr} depuis [GitHub](https://github.com/) via:
+Vous pouvez installer la version de development de **{torchvision.fr}** depuis [GitHub](https://github.com/) via:
 
 ``` r
 # install.packages("devtools")
@@ -24,12 +26,13 @@ Voici comment obtenir l'aide de {torchvision} en français :
 # configure la session en langue française
 Sys.setenv(LANGUAGE = "fr")
 
-# charge la librairie de traduction puis torchvision par sa traduction française
+# charge la librairie torchvision traduction en 
+```
+
+française
 library(torchvision.fr)
 
 # consulte l'aide normalement
 ?transform_affine
-```
 
 ![exemple de page de documentation en français dans l'onglet Help de RStudio](images/clipboard-2721924466.png)
-
