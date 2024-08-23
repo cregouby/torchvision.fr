@@ -24,13 +24,11 @@ Voici comment obtenir l'aide de {torchvision} en français :
 # configure la session en langue française
 Sys.setenv(LANGUAGE = "fr")
 
-# charge la librairie torchvision traduction en 
-```
-
-française
+# charge la librairie torchvision en traduction française
 library(torchvision.fr)
 
 # consulte l'aide normalement
 ?transform_affine
+```
 
 ![exemple de page de documentation en français dans l'onglet Help de RStudio](images/clipboard-2721924466.png)
