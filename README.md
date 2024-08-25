@@ -18,7 +18,7 @@ devtools::install_github("cregouby/torchvision.fr")
 
 ## Exemple
 
-Voici comment obtenir l'aide de {torchvision} en français :
+Voici comment utiliser {torchvision} avec l'aide en français :
 
 ``` r
 # configure la session en langue française
