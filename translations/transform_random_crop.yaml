@@ -1,0 +1,101 @@
+title:
+  original: Crop the given image at a random location
+  translation: Découpe une image avec un cadre aléatoire
+arguments:
+  img:
+    original: A \code{magick-image}, \code{array} or \code{torch_tensor}.
+    translation: Une \code{magick-image}, \code{array} ou un \code{torch_tensor}.
+  size:
+    original: |-
+      (sequence or int): Desired output size. If size is a sequence
+      like c(h, w), output size will be matched to this. If size is an int,
+      smaller edge of the image will be matched to this number.
+      i.e, if height > width, then image will be rescaled to
+      (size * height / width, size).
+    translation: |-
+      (vecteur ou entier) : Taille de sortie attendue. Si la taille est un vecteur
+      comme c(h, w), la taille de sortie sera ajustée pour correspondre à cette taille.
+      Si la taille est un entier, l'arête la plus petite de l'image sera ajustée pour prendre
+      cette valeur. Par exemple si  h > w, l'image sera retaillée à 
+      code{(size * height / width, size)}.
+  padding:
+    original: |-
+      (int or tuple or list): Padding on each border. If a single
+      int is provided this is used to pad all borders. If tuple of length 2 is
+      provided this is the padding on left/right and top/bottom respectively.
+      If a tuple of length 4 is provided this is the padding for the left, right,
+      top and bottom borders respectively.
+    translation: |-
+      (entier ou vecteur) : étirement sur chaque bord. Si un entier est fourni,
+      ce sera utilisé comme taille pour élargir tous les bords. Si c'est un vecteur 
+      de longueur 2, ce sera l'élargissement gauche/droite et haut/bas respectivement. 
+      Si c'est un vecteur de longueur 4, ce sera l'élargissement pour la bordure gauche, 
+      droite, haute et bas dans cet ordre.
+  pad_if_needed:
+    original: |-
+      (boolean): It will pad the image if smaller than the
+      desired size to avoid raising an exception. Since cropping is done
+      after padding, the padding seems to be done at a random offset.
+    translation: |-
+      (booléen) : L'image sera élargie si elle est plus petite que la taille attendue
+      pour éviter une exception. Étant donné que la découpe est faite après l'élargissement, 
+      le padding semble être fait à un endroit aléatoire.
+  fill:
+    original: |-
+      (int or str or tuple): Pixel fill value for constant fill.
+      Default is 0. If a tuple of length 3, it is used to fill R, G, B channels
+      respectively. This value is only used when the padding_mode is constant.
+      Only int value is supported for Tensors.
+    translation: |-
+      (entier ou chaîne de caractères ou vecteur) : Valeur de remplissage des pixels pour 
+      un remplissage constant. Par défaut, ce sera 0. Si c'est un vecteur de longueur 3, 
+      il sera utilisé pour remplir les canaux R, V, B respectivement.
+      Cette valeur est seulement utilisée lorsque le mode de padding est constant.
+      Seul la valeur entière est supportée pour les tenseurs.
+  padding_mode:
+    original: |-
+      Type of padding. Should be: constant, edge, reflect or
+      symmetric. Default is constant. Mode symmetric is not yet supported for
+      Tensor inputs.
+      \itemize{
+      \item constant: pads with a constant value, this value is specified with fill
+      \item edge: pads with the last value on the edge of the image
+      \item reflect: pads with reflection of image (without repeating the last
+      value on the edge) padding \verb{[1, 2, 3, 4]} with 2 elements on both sides
+      in reflect mode will result in \verb{[3, 2, 1, 2, 3, 4, 3, 2]}
+      \item symmetric: pads with reflection of image (repeating the last value on
+      the edge) padding \verb{[1, 2, 3, 4]} with 2 elements on both sides in
+      symmetric mode will result in \verb{[2, 1, 1, 2, 3, 4, 4, 3]}
+      }
+    translation: |-
+      Type de remplissage. Doit être parmi: \verb{constant}, \verb{edge}, \verb{reflect} ou \verb{symmetric}. 
+      Par défaut, c'est \verb{constant}. Le mode symétrique n'est pas encore pris en charge
+      pour les entrées Tensors.
+      \itemize{
+      \item constant: remplit avec une valeur constante, la valeur fournie par \verb{fill}.
+      \item edge: remplit avec la dernière valeur sur le bord de l'image
+      \item reflect: remplit avec une reflexion de l'image (sans répéter la dernière 
+      valeur de la bordure). Par exemple, étendre \verb{[1, 2, 3, 4]} avec deux éléments de chaque côté
+      en mode reflexion donnera \verb{[3, 2, 1, 2, 3, 4, 3, 2]}.
+      \item symmetric: remplit avec une reflexion de l'image (en répétant la dernière 
+      valeur de la bordure). Par exemple, étendre \verb{[1, 2, 3, 4]} avec deux éléments de chaque côté
+      en mode reflexion donnera \verb{[2, 1, 1, 2, 3, 4, 4, 3]}.
+      }
+description:
+  original: |
+    The image can be a Magick Image or a Tensor, in which case it is expected
+    to have \verb{[..., H, W]} shape, where ... means an arbitrary number of leading
+    dimensions.
+  translation: |
+    L'image peut être une image Magick oou un Tenseur torch, auquel cas, il doit être de
+    taille \verb{[..., H, W]}, avec ... ayant un nombre arbitraire de dimensions.
+seealso:
+  original: "Other transforms: \n\\code{\\link{transform_adjust_brightness}()},\n\\code{\\link{transform_adjust_contrast}()},\n\\code{\\link{transform_adjust_gamma}()},\n\\code{\\link{transform_adjust_hue}()},\n\\code{\\link{transform_adjust_saturation}()},\n\\code{\\link{transform_affine}()},\n\\code{\\link{transform_center_crop}()},\n\\code{\\link{transform_color_jitter}()},\n\\code{\\link{transform_convert_image_dtype}()},\n\\code{\\link{transform_crop}()},\n\\code{\\link{transform_five_crop}()},\n\\code{\\link{transform_grayscale}()},\n\\code{\\link{transform_hflip}()},\n\\code{\\link{transform_linear_transformation}()},\n\\code{\\link{transform_normalize}()},\n\\code{\\link{transform_pad}()},\n\\code{\\link{transform_perspective}()},\n\\code{\\link{transform_random_affine}()},\n\\code{\\link{transform_random_apply}()},\n\\code{\\link{transform_random_choice}()},\n\\code{\\link{transform_random_erasing}()},\n\\code{\\link{transform_random_grayscale}()},\n\\code{\\link{transform_random_horizontal_flip}()},\n\\code{\\link{transform_random_order}()},\n\\code{\\link{transform_random_perspective}()},\n\\code{\\link{transform_random_resized_crop}()},\n\\code{\\link{transform_random_rotation}()},\n\\code{\\link{transform_random_vertical_flip}()},\n\\code{\\link{transform_resize}()},\n\\code{\\link{transform_resized_crop}()},\n\\code{\\link{transform_rgb_to_grayscale}()},\n\\code{\\link{transform_rotate}()},\n\\code{\\link{transform_ten_crop}()},\n\\code{\\link{transform_to_tensor}()},\n\\code{\\link{transform_vflip}()}\n"
+  translation: "Autres transforms: \n\\code{\\link{transform_adjust_brightness}()},\n\\code{\\link{transform_adjust_contrast}()},\n\\code{\\link{transform_adjust_gamma}()},\n\\code{\\link{transform_adjust_hue}()},\n\\code{\\link{transform_adjust_saturation}()},\n\\code{\\link{transform_affine}()},\n\\code{\\link{transform_center_crop}()},\n\\code{\\link{transform_color_jitter}()},\n\\code{\\link{transform_convert_image_dtype}()},\n\\code{\\link{transform_crop}()},\n\\code{\\link{transform_five_crop}()},\n\\code{\\link{transform_grayscale}()},\n\\code{\\link{transform_hflip}()},\n\\code{\\link{transform_linear_transformation}()},\n\\code{\\link{transform_normalize}()},\n\\code{\\link{transform_pad}()},\n\\code{\\link{transform_perspective}()},\n\\code{\\link{transform_random_affine}()},\n\\code{\\link{transform_random_apply}()},\n\\code{\\link{transform_random_choice}()},\n\\code{\\link{transform_random_erasing}()},\n\\code{\\link{transform_random_grayscale}()},\n\\code{\\link{transform_random_horizontal_flip}()},\n\\code{\\link{transform_random_order}()},\n\\code{\\link{transform_random_perspective}()},\n\\code{\\link{transform_random_resized_crop}()},\n\\code{\\link{transform_random_rotation}()},\n\\code{\\link{transform_random_vertical_flip}()},\n\\code{\\link{transform_resize}()},\n\\code{\\link{transform_resized_crop}()},\n\\code{\\link{transform_rgb_to_grayscale}()},\n\\code{\\link{transform_rotate}()},\n\\code{\\link{transform_ten_crop}()},\n\\code{\\link{transform_to_tensor}()},\n\\code{\\link{transform_vflip}()}\n"
+untranslatable:
+- alias
+- name
+- keyword
+- concept
+- usage
+

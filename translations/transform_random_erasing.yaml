@@ -1,0 +1,48 @@
+title:
+  original: Randomly selects a rectangular region in an image and erases its pixel
+    values
+  translation: |
+    Sélectionne aléatoirement une région rectangulaire dans une image et efface ses valeurs de pixel.
+arguments:
+  img:
+    original: A \code{magick-image}, \code{array} or \code{torch_tensor}.
+    translation: Une \code{magick-image}, \code{array} ou un \code{torch_tensor}.
+  p:
+    original: probability that the random erasing operation will be performed.
+    translation: probabilité que l'opération d'éffacement soit effectuée.
+  scale:
+    original: range of proportion of erased area against input image.
+    translation: plage de proportion d'aire effacée par rapport à l'image d'entrée.
+  ratio:
+    original: range of aspect ratio of erased area.
+    translation: plage de rapport d'aspect de l'aire éffacée.
+  value:
+    original: |-
+      erasing value. Default is 0. If a single int, it is used to
+      erase all pixels. If a tuple of length 3, it is used to erase
+      R, G, B channels respectively.
+      If a str of 'random', erasing each pixel with random values.
+    translation: |-
+      valeur d'éraseage. 0 par défaut. Si un entier unique, il est utilisé pour effacer 
+      tous les pixels. Si un tenseur de taille 3, il est utilisé pour effacer les canaux 
+      R, V et B respectivement. Si la valeur est 'random', chaque pixel 
+      sera éffacé avec des valeurs aléatoires.
+  inplace:
+    original: boolean to make this transform inplace. Default set to FALSE.
+    translation: Doit-on faire cette opération sur l'objet lui-même.
+description:
+  original: |
+    'Random Erasing Data Augmentation' by Zhong \emph{et al.}
+    See \url{https://arxiv.org/pdf/1708.04896}
+  translation: |
+    'Random Erasing Data Augmentation' par Zhong \emph{et al.}
+    Voir \url{https://arxiv.org/pdf/1708.04896}
+seealso:
+  original: "Other transforms: \n\\code{\\link{transform_adjust_brightness}()},\n\\code{\\link{transform_adjust_contrast}()},\n\\code{\\link{transform_adjust_gamma}()},\n\\code{\\link{transform_adjust_hue}()},\n\\code{\\link{transform_adjust_saturation}()},\n\\code{\\link{transform_affine}()},\n\\code{\\link{transform_center_crop}()},\n\\code{\\link{transform_color_jitter}()},\n\\code{\\link{transform_convert_image_dtype}()},\n\\code{\\link{transform_crop}()},\n\\code{\\link{transform_five_crop}()},\n\\code{\\link{transform_grayscale}()},\n\\code{\\link{transform_hflip}()},\n\\code{\\link{transform_linear_transformation}()},\n\\code{\\link{transform_normalize}()},\n\\code{\\link{transform_pad}()},\n\\code{\\link{transform_perspective}()},\n\\code{\\link{transform_random_affine}()},\n\\code{\\link{transform_random_apply}()},\n\\code{\\link{transform_random_choice}()},\n\\code{\\link{transform_random_crop}()},\n\\code{\\link{transform_random_grayscale}()},\n\\code{\\link{transform_random_horizontal_flip}()},\n\\code{\\link{transform_random_order}()},\n\\code{\\link{transform_random_perspective}()},\n\\code{\\link{transform_random_resized_crop}()},\n\\code{\\link{transform_random_rotation}()},\n\\code{\\link{transform_random_vertical_flip}()},\n\\code{\\link{transform_resize}()},\n\\code{\\link{transform_resized_crop}()},\n\\code{\\link{transform_rgb_to_grayscale}()},\n\\code{\\link{transform_rotate}()},\n\\code{\\link{transform_ten_crop}()},\n\\code{\\link{transform_to_tensor}()},\n\\code{\\link{transform_vflip}()}\n"
+  translation: "Autres transforms: \n\\code{\\link{transform_adjust_brightness}()},\n\\code{\\link{transform_adjust_contrast}()},\n\\code{\\link{transform_adjust_gamma}()},\n\\code{\\link{transform_adjust_hue}()},\n\\code{\\link{transform_adjust_saturation}()},\n\\code{\\link{transform_affine}()},\n\\code{\\link{transform_center_crop}()},\n\\code{\\link{transform_color_jitter}()},\n\\code{\\link{transform_convert_image_dtype}()},\n\\code{\\link{transform_crop}()},\n\\code{\\link{transform_five_crop}()},\n\\code{\\link{transform_grayscale}()},\n\\code{\\link{transform_hflip}()},\n\\code{\\link{transform_linear_transformation}()},\n\\code{\\link{transform_normalize}()},\n\\code{\\link{transform_pad}()},\n\\code{\\link{transform_perspective}()},\n\\code{\\link{transform_random_affine}()},\n\\code{\\link{transform_random_apply}()},\n\\code{\\link{transform_random_choice}()},\n\\code{\\link{transform_random_crop}()},\n\\code{\\link{transform_random_grayscale}()},\n\\code{\\link{transform_random_horizontal_flip}()},\n\\code{\\link{transform_random_order}()},\n\\code{\\link{transform_random_perspective}()},\n\\code{\\link{transform_random_resized_crop}()},\n\\code{\\link{transform_random_rotation}()},\n\\code{\\link{transform_random_vertical_flip}()},\n\\code{\\link{transform_resize}()},\n\\code{\\link{transform_resized_crop}()},\n\\code{\\link{transform_rgb_to_grayscale}()},\n\\code{\\link{transform_rotate}()},\n\\code{\\link{transform_ten_crop}()},\n\\code{\\link{transform_to_tensor}()},\n\\code{\\link{transform_vflip}()}\n"
+untranslatable:
+- alias
+- name
+- keyword
+- concept
+- usage
