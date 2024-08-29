@@ -1,0 +1,57 @@
+title:
+  original: Perspective transformation of an image
+  translation: Transformation de perspective d'une image
+arguments:
+  img:
+    original: A \code{magick-image}, \code{array} or \code{torch_tensor}.
+    translation: Une \code{magick-image}, \code{array} ou un \code{torch_tensor}.
+  startpoints:
+    original: |-
+      (list of list of ints): List containing four lists of two
+      integers corresponding to four corners
+      \verb{[top-left, top-right, bottom-right, bottom-left]} of the original image.
+    translation: |-
+      (liste de liste d'entiers) Liste contenant quatre listes de deux entiers correspondant 
+      aux quatre coins [haut-gauche, haut-droite, bas-droite, bas-gauche] de l'image originale.
+   endpoints:
+    original: |-
+      (list of list of ints): List containing four lists of two
+      integers corresponding to four corners
+      \verb{[top-left, top-right, bottom-right, bottom-left]} of the transformed
+      image.
+    translation: |-
+      (liste de liste d'entiers) Liste contenant quatre listes de deux entiers correspondant 
+      aux quatre coins [haut-gauche, haut-droite, bas-droite, bas-gauche] de l'image transformée.
+  interpolation:
+    original: |-
+      (int, optional) Desired interpolation. An integer
+      \code{0 = nearest}, \code{2 = bilinear}, and \code{3 = bicubic} or a name from
+      \code{\link[magick:options]{magick::filter_types()}}.
+    translation: |-
+      (entier, facultatif) Interpolation souhaitée. Un entier \code{0 =} le plus proche,
+      \code{2 = } bilineaire, \code{3 =} bicubique ou un nom provenant de 
+      \code{\link[magick:options]{magick::filter_types()}}.
+  fill:
+    original: |-
+      (int or str or tuple): Pixel fill value for constant fill.
+      Default is 0. If a tuple of length 3, it is used to fill R, G, B channels
+      respectively. This value is only used when the padding_mode is constant.
+      Only int value is supported for Tensors.
+    translation: |-
+      (entier, chaîne de caractères ou vecteur) Valeur de remplissage pour le remplissage constant. 
+      Par défaut, 0. Si c'est un vecteur de longueur 3, il est utilisé pour remplacer les canaux 
+      R, V et B respectivement. Cette valeur est uniquement utilisée lorsque le mode de remplissage est constant.
+description:
+  original: |
+    Perspective transformation of an image
+  translation: |
+     Transformation de perspective d'une image
+seealso:
+  original: "Other transforms: \n\\code{\\link{transform_adjust_brightness}()},\n\\code{\\link{transform_adjust_contrast}()},\n\\code{\\link{transform_adjust_gamma}()},\n\\code{\\link{transform_adjust_hue}()},\n\\code{\\link{transform_adjust_saturation}()},\n\\code{\\link{transform_affine}()},\n\\code{\\link{transform_center_crop}()},\n\\code{\\link{transform_color_jitter}()},\n\\code{\\link{transform_convert_image_dtype}()},\n\\code{\\link{transform_crop}()},\n\\code{\\link{transform_five_crop}()},\n\\code{\\link{transform_grayscale}()},\n\\code{\\link{transform_hflip}()},\n\\code{\\link{transform_linear_transformation}()},\n\\code{\\link{transform_normalize}()},\n\\code{\\link{transform_pad}()},\n\\code{\\link{transform_random_affine}()},\n\\code{\\link{transform_random_apply}()},\n\\code{\\link{transform_random_choice}()},\n\\code{\\link{transform_random_crop}()},\n\\code{\\link{transform_random_erasing}()},\n\\code{\\link{transform_random_grayscale}()},\n\\code{\\link{transform_random_horizontal_flip}()},\n\\code{\\link{transform_random_order}()},\n\\code{\\link{transform_random_perspective}()},\n\\code{\\link{transform_random_resized_crop}()},\n\\code{\\link{transform_random_rotation}()},\n\\code{\\link{transform_random_vertical_flip}()},\n\\code{\\link{transform_resize}()},\n\\code{\\link{transform_resized_crop}()},\n\\code{\\link{transform_rgb_to_grayscale}()},\n\\code{\\link{transform_rotate}()},\n\\code{\\link{transform_ten_crop}()},\n\\code{\\link{transform_to_tensor}()},\n\\code{\\link{transform_vflip}()}\n"
+  translation: "Autres transforms: \n\\code{\\link{transform_adjust_brightness}()},\n\\code{\\link{transform_adjust_contrast}()},\n\\code{\\link{transform_adjust_gamma}()},\n\\code{\\link{transform_adjust_hue}()},\n\\code{\\link{transform_adjust_saturation}()},\n\\code{\\link{transform_affine}()},\n\\code{\\link{transform_center_crop}()},\n\\code{\\link{transform_color_jitter}()},\n\\code{\\link{transform_convert_image_dtype}()},\n\\code{\\link{transform_crop}()},\n\\code{\\link{transform_five_crop}()},\n\\code{\\link{transform_grayscale}()},\n\\code{\\link{transform_hflip}()},\n\\code{\\link{transform_linear_transformation}()},\n\\code{\\link{transform_normalize}()},\n\\code{\\link{transform_pad}()},\n\\code{\\link{transform_random_affine}()},\n\\code{\\link{transform_random_apply}()},\n\\code{\\link{transform_random_choice}()},\n\\code{\\link{transform_random_crop}()},\n\\code{\\link{transform_random_erasing}()},\n\\code{\\link{transform_random_grayscale}()},\n\\code{\\link{transform_random_horizontal_flip}()},\n\\code{\\link{transform_random_order}()},\n\\code{\\link{transform_random_perspective}()},\n\\code{\\link{transform_random_resized_crop}()},\n\\code{\\link{transform_random_rotation}()},\n\\code{\\link{transform_random_vertical_flip}()},\n\\code{\\link{transform_resize}()},\n\\code{\\link{transform_resized_crop}()},\n\\code{\\link{transform_rgb_to_grayscale}()},\n\\code{\\link{transform_rotate}()},\n\\code{\\link{transform_ten_crop}()},\n\\code{\\link{transform_to_tensor}()},\n\\code{\\link{transform_vflip}()}\n"
+untranslatable:
+- alias
+- name
+- keyword
+- concept
+- usage

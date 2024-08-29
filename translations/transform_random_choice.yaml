@@ -1,0 +1,24 @@
+title:
+  original: Apply single transformation randomly picked from a list
+  translation: Applique une transformation unique aléatoirement choisie dans une liste
+arguments:
+  img:
+    original: A \code{magick-image}, \code{array} or \code{torch_tensor}.
+    translation: Une \code{magick-image}, \code{array} ou un \code{torch_tensor}.
+  transforms:
+    original: '(list or tuple): list of transformations.'
+    translation: '(liste ou vecteur) : liste de transformations.'
+description:
+  original: |
+    Apply single transformation randomly picked from a list
+  translation: |
+    Applique une transformation unique aléatoirement choisie dans une liste
+seealso:
+  original: "Other transforms: \n\\code{\\link{transform_adjust_brightness}()},\n\\code{\\link{transform_adjust_contrast}()},\n\\code{\\link{transform_adjust_gamma}()},\n\\code{\\link{transform_adjust_hue}()},\n\\code{\\link{transform_adjust_saturation}()},\n\\code{\\link{transform_affine}()},\n\\code{\\link{transform_center_crop}()},\n\\code{\\link{transform_color_jitter}()},\n\\code{\\link{transform_convert_image_dtype}()},\n\\code{\\link{transform_crop}()},\n\\code{\\link{transform_five_crop}()},\n\\code{\\link{transform_grayscale}()},\n\\code{\\link{transform_hflip}()},\n\\code{\\link{transform_linear_transformation}()},\n\\code{\\link{transform_normalize}()},\n\\code{\\link{transform_pad}()},\n\\code{\\link{transform_perspective}()},\n\\code{\\link{transform_random_affine}()},\n\\code{\\link{transform_random_apply}()},\n\\code{\\link{transform_random_crop}()},\n\\code{\\link{transform_random_erasing}()},\n\\code{\\link{transform_random_grayscale}()},\n\\code{\\link{transform_random_horizontal_flip}()},\n\\code{\\link{transform_random_order}()},\n\\code{\\link{transform_random_perspective}()},\n\\code{\\link{transform_random_resized_crop}()},\n\\code{\\link{transform_random_rotation}()},\n\\code{\\link{transform_random_vertical_flip}()},\n\\code{\\link{transform_resize}()},\n\\code{\\link{transform_resized_crop}()},\n\\code{\\link{transform_rgb_to_grayscale}()},\n\\code{\\link{transform_rotate}()},\n\\code{\\link{transform_ten_crop}()},\n\\code{\\link{transform_to_tensor}()},\n\\code{\\link{transform_vflip}()}\n"
+  translation: "Autre transforms: \n\\code{\\link{transform_adjust_brightness}()},\n\\code{\\link{transform_adjust_contrast}()},\n\\code{\\link{transform_adjust_gamma}()},\n\\code{\\link{transform_adjust_hue}()},\n\\code{\\link{transform_adjust_saturation}()},\n\\code{\\link{transform_affine}()},\n\\code{\\link{transform_center_crop}()},\n\\code{\\link{transform_color_jitter}()},\n\\code{\\link{transform_convert_image_dtype}()},\n\\code{\\link{transform_crop}()},\n\\code{\\link{transform_five_crop}()},\n\\code{\\link{transform_grayscale}()},\n\\code{\\link{transform_hflip}()},\n\\code{\\link{transform_linear_transformation}()},\n\\code{\\link{transform_normalize}()},\n\\code{\\link{transform_pad}()},\n\\code{\\link{transform_perspective}()},\n\\code{\\link{transform_random_affine}()},\n\\code{\\link{transform_random_apply}()},\n\\code{\\link{transform_random_crop}()},\n\\code{\\link{transform_random_erasing}()},\n\\code{\\link{transform_random_grayscale}()},\n\\code{\\link{transform_random_horizontal_flip}()},\n\\code{\\link{transform_random_order}()},\n\\code{\\link{transform_random_perspective}()},\n\\code{\\link{transform_random_resized_crop}()},\n\\code{\\link{transform_random_rotation}()},\n\\code{\\link{transform_random_vertical_flip}()},\n\\code{\\link{transform_resize}()},\n\\code{\\link{transform_resized_crop}()},\n\\code{\\link{transform_rgb_to_grayscale}()},\n\\code{\\link{transform_rotate}()},\n\\code{\\link{transform_ten_crop}()},\n\\code{\\link{transform_to_tensor}()},\n\\code{\\link{transform_vflip}()}\n"
+untranslatable:
+- alias
+- name
+- keyword
+- concept
+- usage

@@ -1,0 +1,87 @@
+title:
+  original: Random affine transformation of the image keeping center invariant
+  translation: Transformation affine aléatoire de l'image en gardant le centre invariant
+arguments:
+  img:
+    original: A \code{magick-image}, \code{array} or \code{torch_tensor}.
+    translation: Une \code{magick-image}, \code{array} ou un \code{torch_tensor}.
+  degrees:
+    original: |-
+      (sequence or float or int): Range of degrees to select from.
+      If degrees is a number instead of sequence like c(min, max), the range of
+      degrees will be (-degrees, +degrees).
+    translation: |-
+      (vecteur, nombre ou entier) : plage de degrés à sélectionner. Si les degrés
+      sont un nombre au lieu d'une vecteur c(min, max), la plage de degrés sera (-degrés, +degrés).
+  translate:
+    original: |-
+      (tuple, optional): tuple of maximum absolute fraction for
+      horizontal and vertical translations. For example \code{translate=c(a, b)}, then
+      horizontal shift is randomly sampled in the range
+      -img_width * a < dx < img_width * a and vertical shift is randomly sampled
+      in the range -img_height * b < dy < img_height * b. Will not translate by
+      default.
+    translation: |-
+      (vecteur, optionnel): valeurs de la fraction maximum absolue de translation
+      horizontale et verticale. Par exemple, pour \code{translate=c(a, b)}, la translation
+      horizontale sera choisie aléatoirement dans -largeur_image × a < dx < largeur_image × a,
+      et la translation verticale sera choisie aléatoirement dans 
+      -hauteur_image × b < dx < hauteur_image × b. Pas de translation par défaut.
+  scale:
+    original: |-
+      (tuple, optional): scaling factor interval, e.g c(a, b), then
+      scale is randomly sampled from the range a <= scale <= b. Will keep
+      original scale by default.
+    translation: |-
+      (vecteur, optionnel): intervale pour le choix du facteur d'échelle, ex: Pour c(a, b), 
+      le facteur d'échelle est choisi aléatoirement dans  a <= scale <= b. Pas de 
+      changement d'échelle par défaut.
+  shear:
+    original: |-
+      (sequence or float or int, optional): Range of degrees to select
+      from. If shear is a number, a shear parallel to the x axis in the range
+      (-shear, +shear) will be applied. Else if shear is a tuple or list of 2
+      values a shear parallel to the x axis in the range \verb{(shear[1], shear[2])}
+      will be applied. Else if shear is a tuple or list of 4 values, a x-axis
+      shear in \verb{(shear[1], shear[2])} and y-axis shear in \verb{(shear[3], shear[4])}
+      will be applied. Will not apply shear by default.
+    translation: |-
+      (vecteur, réell ou entier, optionnel): plage de degrés de déformation à appliquer. 
+      Si la déformation est un nombre, une déformation parallèle à l'axe des x dans 
+      la plage (-shear, +shear) sera appliquée. Si la déformation est un vecteur de 2 valeurs, 
+      une déformation parallèle à l'axe des x dans la plage (shear[1], shear[2]) sera appliquée. 
+      Si c'est un vecteur de 4 valeurs, une déformation parallèle à l'axe des x dans la plage 
+      (shear[1], shear[2]) et une déformation parallèle à l'axe des y dans la plage 
+      (shear[3], shear[4]) sera appliquée. Aucune déformation n'est appliquée par défaut.
+  resample:
+    original: |-
+      (int, optional): An optional resampling filter. See interpolation
+      modes.
+    translation: |-
+      (entier, optionnel): Un filtre de rééchantillonnage. Voir les modes d'interpolation.
+  fillcolor:
+    original: |-
+      (tuple or int): Optional fill color (Tuple for RGB Image and
+      int for grayscale) for the area outside the transform in the output image
+      (Pillow>=5.0.0). This option is not supported for Tensor input. Fill value
+      for the area outside the transform in the output image is always 0.
+    translation: |-
+      (vecteur ou entier): couleurs de remplissage facultatives (Tuple pour les images RVB
+      et entier pour les images en niveau de gris) pour l'aire extérieure à la transformation
+      dans l'image de sortie (Pillow>=5.0.0). Cette option n'est pas prise en charge pour 
+      les entrées tenseur. La valeur de remplissage pour l'aire extérieure à la transformation 
+      dans l'image de sortie est toujours 0.
+description:
+  original: |
+    Random affine transformation of the image keeping center invariant
+  translation:  |
+    Transformation affine aléatoire de l'image en gardant le centre invariant
+seealso:
+  original: "Other transforms: \n\\code{\\link{transform_adjust_brightness}()},\n\\code{\\link{transform_adjust_contrast}()},\n\\code{\\link{transform_adjust_gamma}()},\n\\code{\\link{transform_adjust_hue}()},\n\\code{\\link{transform_adjust_saturation}()},\n\\code{\\link{transform_affine}()},\n\\code{\\link{transform_center_crop}()},\n\\code{\\link{transform_color_jitter}()},\n\\code{\\link{transform_convert_image_dtype}()},\n\\code{\\link{transform_crop}()},\n\\code{\\link{transform_five_crop}()},\n\\code{\\link{transform_grayscale}()},\n\\code{\\link{transform_hflip}()},\n\\code{\\link{transform_linear_transformation}()},\n\\code{\\link{transform_normalize}()},\n\\code{\\link{transform_pad}()},\n\\code{\\link{transform_perspective}()},\n\\code{\\link{transform_random_apply}()},\n\\code{\\link{transform_random_choice}()},\n\\code{\\link{transform_random_crop}()},\n\\code{\\link{transform_random_erasing}()},\n\\code{\\link{transform_random_grayscale}()},\n\\code{\\link{transform_random_horizontal_flip}()},\n\\code{\\link{transform_random_order}()},\n\\code{\\link{transform_random_perspective}()},\n\\code{\\link{transform_random_resized_crop}()},\n\\code{\\link{transform_random_rotation}()},\n\\code{\\link{transform_random_vertical_flip}()},\n\\code{\\link{transform_resize}()},\n\\code{\\link{transform_resized_crop}()},\n\\code{\\link{transform_rgb_to_grayscale}()},\n\\code{\\link{transform_rotate}()},\n\\code{\\link{transform_ten_crop}()},\n\\code{\\link{transform_to_tensor}()},\n\\code{\\link{transform_vflip}()}\n"
+  translation: "Autres transforms: \n\\code{\\link{transform_adjust_brightness}()},\n\\code{\\link{transform_adjust_contrast}()},\n\\code{\\link{transform_adjust_gamma}()},\n\\code{\\link{transform_adjust_hue}()},\n\\code{\\link{transform_adjust_saturation}()},\n\\code{\\link{transform_affine}()},\n\\code{\\link{transform_center_crop}()},\n\\code{\\link{transform_color_jitter}()},\n\\code{\\link{transform_convert_image_dtype}()},\n\\code{\\link{transform_crop}()},\n\\code{\\link{transform_five_crop}()},\n\\code{\\link{transform_grayscale}()},\n\\code{\\link{transform_hflip}()},\n\\code{\\link{transform_linear_transformation}()},\n\\code{\\link{transform_normalize}()},\n\\code{\\link{transform_pad}()},\n\\code{\\link{transform_perspective}()},\n\\code{\\link{transform_random_apply}()},\n\\code{\\link{transform_random_choice}()},\n\\code{\\link{transform_random_crop}()},\n\\code{\\link{transform_random_erasing}()},\n\\code{\\link{transform_random_grayscale}()},\n\\code{\\link{transform_random_horizontal_flip}()},\n\\code{\\link{transform_random_order}()},\n\\code{\\link{transform_random_perspective}()},\n\\code{\\link{transform_random_resized_crop}()},\n\\code{\\link{transform_random_rotation}()},\n\\code{\\link{transform_random_vertical_flip}()},\n\\code{\\link{transform_resize}()},\n\\code{\\link{transform_resized_crop}()},\n\\code{\\link{transform_rgb_to_grayscale}()},\n\\code{\\link{transform_rotate}()},\n\\code{\\link{transform_ten_crop}()},\n\\code{\\link{transform_to_tensor}()},\n\\code{\\link{transform_vflip}()}\n"
+untranslatable:
+- alias
+- name
+- keyword
+- concept
+- usage

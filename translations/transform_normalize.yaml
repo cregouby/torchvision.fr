@@ -1,0 +1,41 @@
+title:
+  original: Normalize a tensor image with mean and standard deviation
+  translation: Normalise le tenseur d'image à la moyenne et l'écart-type donné
+arguments:
+  img:
+    original: A \code{magick-image}, \code{array} or \code{torch_tensor}.
+    translation: Une \code{magick-image}, \code{array} ou un \code{torch_tensor}.
+  mean:
+    original: '(sequence): Sequence of means for each channel.'
+    translation: '(vecteur) : Vecteur de moyennes pour chaque canal.'
+  std:
+    original: '(sequence): Sequence of standard deviations for each channel.'
+    translation: '(vecteur) : Vecteur de écart-types pour chaque canal.'
+  inplace:
+    original: '(bool,optional): Bool to make this operation in-place.'
+    translation: (booléen, optionnel) : Doit-on faire cette opération sur l'objet lui-même.
+description:
+  original: |
+    Given mean: \verb{(mean[1],...,mean[n])} and std: \verb{(std[1],..,std[n])} for \code{n}
+    channels, this transform will normalize each channel of the input
+    \code{torch_tensor} i.e.,
+    \code{output[channel] = (input[channel] - mean[channel]) / std[channel]}
+  translation: |
+    Étant donné \verb{mean: (mean[1],...,mean[n])} et \verb{std: (std[1],..,std[n])} pour les \code{n}
+    canaux, la transformation normalise chaque canal de l'image d'entrée 
+    \code{torch_tensor} soit
+    \code{output[channel] = (input[channel] - mean[channel]) / std[channel]}
+note:
+  original: |
+    This transform acts out of place, i.e., it does not mutate the input tensor.
+  translation: |
+    Cette transformation a lieu sur l'objet lui-même. Il n'y a pas de mutation du tenseur d'antrée
+seealso:
+  original: "Other transforms: \n\\code{\\link{transform_adjust_brightness}()},\n\\code{\\link{transform_adjust_contrast}()},\n\\code{\\link{transform_adjust_gamma}()},\n\\code{\\link{transform_adjust_hue}()},\n\\code{\\link{transform_adjust_saturation}()},\n\\code{\\link{transform_affine}()},\n\\code{\\link{transform_center_crop}()},\n\\code{\\link{transform_color_jitter}()},\n\\code{\\link{transform_convert_image_dtype}()},\n\\code{\\link{transform_crop}()},\n\\code{\\link{transform_five_crop}()},\n\\code{\\link{transform_grayscale}()},\n\\code{\\link{transform_hflip}()},\n\\code{\\link{transform_linear_transformation}()},\n\\code{\\link{transform_pad}()},\n\\code{\\link{transform_perspective}()},\n\\code{\\link{transform_random_affine}()},\n\\code{\\link{transform_random_apply}()},\n\\code{\\link{transform_random_choice}()},\n\\code{\\link{transform_random_crop}()},\n\\code{\\link{transform_random_erasing}()},\n\\code{\\link{transform_random_grayscale}()},\n\\code{\\link{transform_random_horizontal_flip}()},\n\\code{\\link{transform_random_order}()},\n\\code{\\link{transform_random_perspective}()},\n\\code{\\link{transform_random_resized_crop}()},\n\\code{\\link{transform_random_rotation}()},\n\\code{\\link{transform_random_vertical_flip}()},\n\\code{\\link{transform_resize}()},\n\\code{\\link{transform_resized_crop}()},\n\\code{\\link{transform_rgb_to_grayscale}()},\n\\code{\\link{transform_rotate}()},\n\\code{\\link{transform_ten_crop}()},\n\\code{\\link{transform_to_tensor}()},\n\\code{\\link{transform_vflip}()}\n"
+  translation: ~
+untranslatable:
+- alias
+- name
+- keyword
+- concept
+- usage
