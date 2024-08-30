@@ -1,6 +1,6 @@
 title:
   original: Perspective transformation of an image
-  translation: Transformation de perspective d'une image
+  translation: Transforme la perspective d'une image
 arguments:
   img:
     original: A \code{magick-image}, \code{array} or \code{torch_tensor}.
@@ -40,7 +40,8 @@ arguments:
     translation: |-
       (entier, chaîne de caractères ou vecteur) Valeur de remplissage pour le remplissage constant. 
       Par défaut, 0. Si c'est un vecteur de longueur 3, il est utilisé pour remplacer les canaux 
-      R, V et B respectivement. Cette valeur est uniquement utilisée lorsque le mode de remplissage est constant.
+      R, V et B respectivement. Cette valeur est uniquement utilisée lorsque le mode de 
+      remplissage est constant.
 description:
   original: |
     Perspective transformation of an image

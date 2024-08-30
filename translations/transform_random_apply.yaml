@@ -1,4 +1,6 @@
-
+title:
+  original: Apply a list of transformations randomly with a given probability
+  translation:  Applique une liste de transformations aléatoirement avec une probabilité donnée.
 arguments:
   img:
     original: A \code{magick-image}, \code{array} or \code{torch_tensor}.

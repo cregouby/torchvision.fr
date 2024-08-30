@@ -26,8 +26,8 @@ arguments:
     translation: |-
       (entier ou chaîne de caractères ou vecteur) : Valeur de remplissage pour le remplissage constant. 
       Par défaut, c'est 0. Si un vecteur de longueur 3 est fourni, il est utilisé pour remplir les canaux R, V, B
-      respectivement. Cette valeur n'est utilisée que lorsque le mode d'padding est constant. Seule la valeur
-      entière est prise en charge pour les Tensors.
+      respectivement. Cette valeur n'est utilisée que lorsque le mode de padding est constant. 
+      Seule la valeur entière est prise en charge pour les Tensors.
   padding_mode:
     original: |-
       Type of padding. Should be: constant, edge, reflect or
