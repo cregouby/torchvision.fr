@@ -47,7 +47,7 @@ arguments:
       (valeur, paire de valeurs, ou quadruplet de valeurs, optionnel): Valeurs limites
       de cisaillement. Pour une valeur, un cisaillement paralèlle à l'axe des x sera 
       choisit dans l'intervalle [-shear, +shear]. Pour une paire de valeurs, un
-      cisaillement paralèlle à l'axe des x sera choisit dans l'intervalle \verb{([shear[1], shear[2])]}.
+      cisaillement paralèlle à l'axe des x sera choisit dans l'intervalle \verb{[shear[1], shear[2]]}.
       Pour un quadruplet de valeurs, un cisaillement suivant l'axe des x sera choisi dans
       \verb{[shear[1], shear[2]]} et suivant l'axe des y dans \verb{[shear[3], shear[4]]}.
       Pas de cisaillement par défaut.
