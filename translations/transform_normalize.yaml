@@ -7,10 +7,10 @@ arguments:
     translation: Une \code{magick-image}, \code{array} ou un \code{torch_tensor}.
   mean:
     original: '(sequence): Sequence of means for each channel.'
-    translation: '(vecteur) : Vecteur de moyennes pour chaque canal.'
+    translation: '(triplet) : Vecteur de moyennes pour chaque canal.'
   std:
     original: '(sequence): Sequence of standard deviations for each channel.'
-    translation: '(vecteur) : Vecteur de écart-types pour chaque canal.'
+    translation: '(triplet) : Vecteur de écart-types pour chaque canal.'
   inplace:
     original: '(bool,optional): Bool to make this operation in-place.'
     translation: |

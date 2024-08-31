@@ -11,7 +11,7 @@ arguments:
       If degrees is a number instead of sequence like c(min, max), the range of
       degrees will be (-degrees, +degrees).
     translation: |-
-      (vecteur, nombre ou entier) : plage de degrés à sélectionner. Si les degrés
+      (paire de valeurs ou valeur) : plage de degrés à sélectionner. Si les degrés
       sont un nombre au lieu d'une vecteur c(min, max), la plage de degrés sera (-degrés, +degrés).
   translate:
     original: |-
@@ -22,7 +22,7 @@ arguments:
       in the range -img_height * b < dy < img_height * b. Will not translate by
       default.
     translation: |-
-      (vecteur, optionnel): valeurs de la fraction maximum absolue de translation
+      (paire numérique, optionnel): valeurs de la fraction maximum absolue de translation
       horizontale et verticale. Par exemple, pour \code{translate=c(a, b)}, la translation
       horizontale sera choisie aléatoirement dans -largeur_image × a < dx < largeur_image × a,
       et la translation verticale sera choisie aléatoirement dans 
@@ -33,7 +33,7 @@ arguments:
       scale is randomly sampled from the range a <= scale <= b. Will keep
       original scale by default.
     translation: |-
-      (vecteur, optionnel): intervale pour le choix du facteur d'échelle, ex: Pour c(a, b), 
+      (paire numérique, optionnel): intervale pour le choix du facteur d'échelle, ex: Pour c(a, b), 
       le facteur d'échelle est choisi aléatoirement dans  a <= scale <= b. Pas de 
       changement d'échelle par défaut.
   shear:
@@ -46,13 +46,13 @@ arguments:
       shear in \verb{(shear[1], shear[2])} and y-axis shear in \verb{(shear[3], shear[4])}
       will be applied. Will not apply shear by default.
     translation: |-
-      (vecteur, réell ou entier, optionnel): plage de degrés de déformation à appliquer. 
-      Si la déformation est un nombre, une déformation parallèle à l'axe des x dans 
-      la plage (-shear, +shear) sera appliquée. Si la déformation est un vecteur de 2 valeurs, 
-      une déformation parallèle à l'axe des x dans la plage (shear[1], shear[2]) sera appliquée. 
-      Si c'est un vecteur de 4 valeurs, une déformation parallèle à l'axe des x dans la plage 
-      (shear[1], shear[2]) et une déformation parallèle à l'axe des y dans la plage 
-      (shear[3], shear[4]) sera appliquée. Aucune déformation n'est appliquée par défaut.
+      (valeur, paire de valeurs, ou quadruplet de valeurs, optionnel): Valeurs limites
+      de cisaillement. Pour une valeur, un cisaillement paralèlle à l'axe des x sera 
+      choisit dans l'intervalle [-shear, +shear]. Pour une paire numérique, un
+      cisaillement paralèlle à l'axe des x sera choisit dans l'intervalle \verb{[shear[1], shear[2]]}.
+      Pour un quadruplet de valeurs, un cisaillement suivant l'axe des x sera choisi dans
+      \verb{[shear[1], shear[2]]} et suivant l'axe des y dans \verb{[shear[3], shear[4]]}.
+      Pas de cisaillement par défaut.
   resample:
     original: |-
       (int, optional): An optional resampling filter. See interpolation
@@ -66,7 +66,7 @@ arguments:
       (Pillow>=5.0.0). This option is not supported for Tensor input. Fill value
       for the area outside the transform in the output image is always 0.
     translation: |-
-      (vecteur ou entier): couleurs de remplissage facultatives (Tuple pour les images RVB
+      (triplet d'entiers ou entier): couleurs de remplissage facultatives (triplet pour les images RVB
       et entier pour les images en niveau de gris) pour l'aire extérieure à la transformation
       dans l'image de sortie (Pillow>=5.0.0). Cette option n'est pas prise en charge pour 
       les entrées tenseur. La valeur de remplissage pour l'aire extérieure à la transformation 

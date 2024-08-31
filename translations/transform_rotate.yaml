@@ -33,7 +33,7 @@ arguments:
       (list or tuple, optional): Optional center of rotation, c(x, y).
       Origin is the upper left corner. Default is the center of the image.
     translation: |-
-      (vecteur, optionnel): le centre de rotation, \code{c(x, y)}.
+      (paire d'entiers, optionnel): le centre de rotation, \code{c(x, y)}.
       L'origine est le coin en haut à gauche de l'image. Par défaut, c'est le 
       centre de l'image.
   fill:
@@ -44,7 +44,7 @@ arguments:
       for Pillow>=5.2.0. This option is not supported for Tensor input. Fill
       value for the area outside the transform in the output image is always 0.
     translation: |-
-      (entier ou réel ou vecteur) : Valeur de remplissage pour le remplissage de la 
+      (triplet d'entiers, entier ou réel) : Valeur de remplissage pour le remplissage de la 
       zone en dehors de l'image après rotation. Par défaut, c'est 0. Si un vecteur de 
       longueur 3 est fourni, il est utilisé pour remplir les canaux R, V, B
       respectivement. Cette option n'est supportée que si Pillow >= 5.2.0. Seule la valeur

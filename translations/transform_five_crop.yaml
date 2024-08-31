@@ -13,8 +13,8 @@ arguments:
       i.e, if height > width, then image will be rescaled to
       (size * height / width, size).
     translation: |-
-      (vecteur ou entier): Taille de sortie attendue. Si c'est un vecteur c(h, w),
-      La taille de sortie suivra. Si c'est un entier,
+      (paire d'entiers ou entier): Taille de sortie attendue. Si c'est un vecteur 
+      c(h, w), la taille de sortie suivra. Si c'est un entier,
       le petit bord de l'image aura la taille spécifiée.
       c'est à dire que si \code{hauteur > largeur} alors l'image sera découpée à
       \code{size * hauteur / largeur, size}.

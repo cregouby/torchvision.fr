@@ -13,7 +13,7 @@ arguments:
       i.e, if height > width, then image will be rescaled to
       (size * height / width, size).
     translation: |-
-      (vecteur ou entier): Taille de sortie attendue. Si c'est un vecteur c(h, w),
+      (paire d'entiers ou entier): Taille de sortie attendue. Si c'est un vecteur c(h, w),
       La taille de sortie suivra. Si c'est un entier,
       le petit bord de l'image aura la taille spécifiée.
       c'est à dire que si \code{hauteur > largeur} alors l'image sera découpée à
@@ -26,7 +26,7 @@ arguments:
       If a tuple of length 4 is provided this is the padding for the left, right,
       top and bottom borders respectively.
     translation: |-
-      (entier ou vecteur) : Taille de la bordure en pixels. Si un seul entier est fourni,
+      (quadruplet ou paire d'entiers ou entier) : Taille de la bordure en pixels. Si un seul entier est fourni,
       il est utilisé sur chaque bordure. Si 2 valeurs sont fournies, c'est la taille de
       bordure pour les bords gauche/droite et haut/bas respectivement. Si un vecteur de 4 valeurs 
       est fourni, il donnera la taille des bords gauche, droite, haut et bas respectivement.
@@ -46,7 +46,7 @@ arguments:
       respectively. This value is only used when the padding_mode is constant.
       Only int value is supported for Tensors.
     translation: |-
-      (entier ou chaîne de caractères ou vecteur) : Valeur de remplissage des pixels pour 
+      (vecteurs d'entiers, entier ou chaîne de caractère) : Valeur de remplissage des pixels pour 
       un remplissage constant. Par défaut, ce sera 0. Si c'est un vecteur de longueur 3, 
       il sera utilisé pour remplir les canaux R, V, B respectivement.
       Cette valeur est seulement utilisée lorsque le mode de padding est constant.

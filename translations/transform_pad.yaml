@@ -13,7 +13,7 @@ arguments:
       If a tuple of length 4 is provided this is the padding for the left, right,
       top and bottom borders respectively.
     translation: |-
-      (entier ou vecteur) : Taille de la bordure en pixels. Si un seul entier est fourni,
+      (quadruplet ou paire d'entiers ou entier) : Taille de la bordure en pixels. Si un seul entier est fourni,
       il est utilisé sur chaque bordure. Si 2 valeurs sont fournies, c'est la taille de
       bordure pour les bords gauche/droite et haut/bas respectivement. Si un vecteur de 4 valeurs 
       est fourni, il donnera la taille des bords gauche, droite, haut et bas respectivement.
@@ -24,7 +24,7 @@ arguments:
       respectively. This value is only used when the padding_mode is constant.
       Only int value is supported for Tensors.
     translation: |-
-      (entier ou chaîne de caractères ou vecteur) : Valeur de remplissage pour le remplissage constant. 
+      (triplet d'entiers, entier ou chaîne de caractères) : Valeur de remplissage pour le remplissage constant. 
       Par défaut, c'est 0. Si un vecteur de longueur 3 est fourni, il est utilisé pour remplir les canaux R, V, B
       respectivement. Cette valeur n'est utilisée que lorsque le mode de padding est constant. 
       Seule la valeur entière est prise en charge pour les Tensors.

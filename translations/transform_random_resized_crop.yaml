@@ -13,7 +13,7 @@ arguments:
       i.e, if height > width, then image will be rescaled to
       (size * height / width, size).
     translation: |-
-      (vecteur ou entier): Taille de sortie attendue. Si c'est un vecteur c(h, w),
+      (paire d'entiers ou entier): Taille de sortie attendue. Si c'est un vecteur c(h, w),
       La taille de sortie suivra. Si c'est un entier,
       le petit bord de l'image aura la taille spécifiée.
       c'est à dire que si \code{hauteur > largeur} alors l'image sera découpée à
@@ -21,13 +21,13 @@ arguments:
   scale:
     original: '(tuple of float): range of size of the origin size cropped'
     translation: |
-      (vecteur de réels): la plage des tailles pour le découpage de l'image initiale
+      (paire de réels): la plage des rapports de tailles pour le découpage de l'image initiale
   ratio:
     original: |-
       (tuple of float): range of aspect ratio of the origin aspect
       ratio cropped.
     translation: |-
-      (vecteur de réels): la plage des rapports de format à appliquer à l'image initiale
+      (paire de réels): la plage des rapports de format à appliquer à l'image initiale
   interpolation:
     original: |-
       (int, optional) Desired interpolation. An integer

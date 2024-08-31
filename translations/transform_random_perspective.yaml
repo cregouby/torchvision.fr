@@ -31,7 +31,7 @@ arguments:
       respectively. This value is only used when the padding_mode is constant.
       Only int value is supported for Tensors.
     translation: |-
-      (entier, chaîne de caractères ou vecteur) Valeur de remplissage pour le remplissage constant. 
+      (triplet d'entiers, entier ou chaîne de caractères) Valeur de remplissage pour le remplissage constant. 
       Par défaut, 0. Si c'est un vecteur de longueur 3, il est utilisé pour remplacer les canaux 
       R, V et B respectivement. Cette valeur est uniquement utilisée lorsque le mode 
       de remplissage est constant.

@@ -1,6 +1,6 @@
 title:
   original: Cifar datasets
-  translation: Jeux de données Cifar
+  translation: Les jeux de données Cifar.
 arguments:
   root:
     original: |-
@@ -19,10 +19,10 @@ arguments:
   transform:
     original: |-
       (callable, optional): A function/transform that takes in an PIL image
-      and returns a transformed version. E.g, \code{transforms.RandomCrop}
+      and returns a transformed version. E.g, \code{transforms_random_crop()}
     translation: |-
       (fonction, optionnel): Une fonction ou \code{transform} qui prend une image PIL 
-      en entrée et retourne sa version transformée. Exemple \code{transforms.RandomCrop}
+      en entrée et retourne sa version transformée. Exemple \code{transforms_random_crop()}
   target_transform:
     original: |-
       (callable, optional): A function/transform that takes in the
