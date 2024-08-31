@@ -1,0 +1,58 @@
+title:
+  original: Crop an image and resize it to a desired size
+  translation: Détoure une image et la transforme à la taille attendue.
+arguments:
+  img:
+    original: A \code{magick-image}, \code{array} or \code{torch_tensor}.
+    translation: Une \code{magick-image}, \code{array} ou un \code{torch_tensor}.
+  top:
+    original: '(int): Vertical component of the top left corner of the crop box.'
+    translation: '(entier): La composante verticale du coin en haut à gauche du cadre de détourage.'
+  left:
+    original: |-
+      (int): Horizontal component of the top left corner of the crop
+      box.
+    translation: |-
+      (entier): La composante horizontale du coin en haut à gauche du cadre de détourage.'
+  height:
+    original: '(int): Height of the crop box.'
+    translation: '(entier): Hauteur du cadre de détourage.'
+  width:
+    original: '(int): Width of the crop box.'
+    translation: '(entier): Largeur du cadre de détourage.'
+  size:
+    original: |-
+      (sequence or int): Desired output size. If size is a sequence
+      like c(h, w), output size will be matched to this. If size is an int,
+      smaller edge of the image will be matched to this number.
+      i.e, if height > width, then image will be rescaled to
+      (size * height / width, size).
+    translation: |-
+       (vecteur ou entier): Taille de sortie attendue. Si c'est un vecteur c(h, w),
+      La taille de sortie suivra. Si c'est un entier,
+      le petit bord de l'image aura la taille spécifiée.
+      c'est à dire que si \code{hauteur > largeur} alors l'image sera découpée à
+      \code{size * hauteur / largeur, size}.
+  interpolation:
+    original: |-
+      (int, optional) Desired interpolation. An integer
+      \code{0 = nearest}, \code{2 = bilinear}, and \code{3 = bicubic} or a name from
+      \code{\link[magick:options]{magick::filter_types()}}.
+    translation: |-
+      (entier, facultatif) Interpolation souhaitée. Un entier \code{0 =} le plus proche,
+      \code{2 = } bilineaire, \code{3 =} bicubique ou un nom provenant de 
+      \code{\link[magick:options]{magick::filter_types()}}.
+description:
+  original: |
+    Crop an image and resize it to a desired size
+  translation: |
+    Détoure une image et la transforme à la taille attendue.
+seealso:
+  original: "Other transforms: \n\\code{\\link{transform_adjust_brightness}()},\n\\code{\\link{transform_adjust_contrast}()},\n\\code{\\link{transform_adjust_gamma}()},\n\\code{\\link{transform_adjust_hue}()},\n\\code{\\link{transform_adjust_saturation}()},\n\\code{\\link{transform_affine}()},\n\\code{\\link{transform_center_crop}()},\n\\code{\\link{transform_color_jitter}()},\n\\code{\\link{transform_convert_image_dtype}()},\n\\code{\\link{transform_crop}()},\n\\code{\\link{transform_five_crop}()},\n\\code{\\link{transform_grayscale}()},\n\\code{\\link{transform_hflip}()},\n\\code{\\link{transform_linear_transformation}()},\n\\code{\\link{transform_normalize}()},\n\\code{\\link{transform_pad}()},\n\\code{\\link{transform_perspective}()},\n\\code{\\link{transform_random_affine}()},\n\\code{\\link{transform_random_apply}()},\n\\code{\\link{transform_random_choice}()},\n\\code{\\link{transform_random_crop}()},\n\\code{\\link{transform_random_erasing}()},\n\\code{\\link{transform_random_grayscale}()},\n\\code{\\link{transform_random_horizontal_flip}()},\n\\code{\\link{transform_random_order}()},\n\\code{\\link{transform_random_perspective}()},\n\\code{\\link{transform_random_resized_crop}()},\n\\code{\\link{transform_random_rotation}()},\n\\code{\\link{transform_random_vertical_flip}()},\n\\code{\\link{transform_resize}()},\n\\code{\\link{transform_rgb_to_grayscale}()},\n\\code{\\link{transform_rotate}()},\n\\code{\\link{transform_ten_crop}()},\n\\code{\\link{transform_to_tensor}()},\n\\code{\\link{transform_vflip}()}\n"
+  translation: "Autres transforms: \n\\code{\\link{transform_adjust_brightness}()},\n\\code{\\link{transform_adjust_contrast}()},\n\\code{\\link{transform_adjust_gamma}()},\n\\code{\\link{transform_adjust_hue}()},\n\\code{\\link{transform_adjust_saturation}()},\n\\code{\\link{transform_affine}()},\n\\code{\\link{transform_center_crop}()},\n\\code{\\link{transform_color_jitter}()},\n\\code{\\link{transform_convert_image_dtype}()},\n\\code{\\link{transform_crop}()},\n\\code{\\link{transform_five_crop}()},\n\\code{\\link{transform_grayscale}()},\n\\code{\\link{transform_hflip}()},\n\\code{\\link{transform_linear_transformation}()},\n\\code{\\link{transform_normalize}()},\n\\code{\\link{transform_pad}()},\n\\code{\\link{transform_perspective}()},\n\\code{\\link{transform_random_affine}()},\n\\code{\\link{transform_random_apply}()},\n\\code{\\link{transform_random_choice}()},\n\\code{\\link{transform_random_crop}()},\n\\code{\\link{transform_random_erasing}()},\n\\code{\\link{transform_random_grayscale}()},\n\\code{\\link{transform_random_horizontal_flip}()},\n\\code{\\link{transform_random_order}()},\n\\code{\\link{transform_random_perspective}()},\n\\code{\\link{transform_random_resized_crop}()},\n\\code{\\link{transform_random_rotation}()},\n\\code{\\link{transform_random_vertical_flip}()},\n\\code{\\link{transform_resize}()},\n\\code{\\link{transform_rgb_to_grayscale}()},\n\\code{\\link{transform_rotate}()},\n\\code{\\link{transform_ten_crop}()},\n\\code{\\link{transform_to_tensor}()},\n\\code{\\link{transform_vflip}()}\n"
+untranslatable:
+- alias
+- name
+- keyword
+- concept
+- usage

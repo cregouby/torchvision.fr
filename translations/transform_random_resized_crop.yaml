@@ -1,6 +1,6 @@
 title:
   original: Crop image to random size and aspect ratio
-  translation: Découpe une image avec une taille et un ratio aléatoire
+  translation: Découpe une image avec une taille et un format aléatoire
 arguments:
   img:
     original: A \code{magick-image}, \code{array} or \code{torch_tensor}.
@@ -13,9 +13,11 @@ arguments:
       i.e, if height > width, then image will be rescaled to
       (size * height / width, size).
     translation: |-
-      (vecteur ou entier): Taille souhaitée de l'image de sortie. Si la taille est un vecteur 
-      c(h, w), la taille du résultat sera alignée sur celle-ci. Si la taille est un entier, 
-      la plus petite dimension de l'image sera alignée sur ce nombre.
+       (vecteur ou entier): Taille de sortie attendue. Si c'est un vecteur c(h, w),
+      La taille de sortie suivra. Si c'est un entier,
+      le petit bord de l'image aura la taille spécifiée.
+      c'est à dire que si \code{hauteur > largeur} alors l'image sera découpée à
+      \code{size * hauteur / largeur, size}.
   scale:
     original: '(tuple of float): range of size of the origin size cropped'
     translation: |
@@ -25,7 +27,7 @@ arguments:
       (tuple of float): range of aspect ratio of the origin aspect
       ratio cropped.
     translation: |-
-      (vecteur de réels): la plage des rapporst de format à appliquer à l'image initiale
+      (vecteur de réels): la plage des rapports de format à appliquer à l'image initiale
   interpolation:
     original: |-
       (int, optional) Desired interpolation. An integer
@@ -41,7 +43,10 @@ description:
     Magick Image or a Tensor, in which case it is expected to have
     \verb{[..., H, W]} shape, where ... means an arbitrary number of leading
     dimensions
-  translation: ~
+  translation: |
+    Découpe une image aléatoirement en taille et en format.
+    L'image peut être une Image Magick ou un tenseur Torch, auquel cas il 
+    doit avoir une taille \verb{[..., H, W]}, où ... a un nombre arbitraire de dimensions.
 details:
   original: |
     A crop of random size (default: of 0.08 to 1.0) of the original size

@@ -13,11 +13,11 @@ arguments:
       i.e, if height > width, then image will be rescaled to
       (size * height / width, size).
     translation: |-
-      (vecteur ou entier) : Taille de sortie attendue. Si la taille est un vecteur
-      comme c(h, w), la taille de sortie sera ajustée pour correspondre à cette taille.
-      Si la taille est un entier, l'arête la plus petite de l'image sera ajustée pour prendre
-      cette valeur. Par exemple si  h > w, l'image sera retaillée à 
-      code{(size * height / width, size)}.
+       (vecteur ou entier): Taille de sortie attendue. Si c'est un vecteur c(h, w),
+      La taille de sortie suivra. Si c'est un entier,
+      le petit bord de l'image aura la taille spécifiée.
+      c'est à dire que si \code{hauteur > largeur} alors l'image sera découpée à
+      \code{size * hauteur / largeur, size}.
   padding:
     original: |-
       (int or tuple or list): Padding on each border. If a single
@@ -26,11 +26,10 @@ arguments:
       If a tuple of length 4 is provided this is the padding for the left, right,
       top and bottom borders respectively.
     translation: |-
-      (entier ou vecteur) : étirement sur chaque bord. Si un entier est fourni,
-      ce sera utilisé comme taille pour élargir tous les bords. Si c'est un vecteur 
-      de longueur 2, ce sera l'élargissement gauche/droite et haut/bas respectivement. 
-      Si c'est un vecteur de longueur 4, ce sera l'élargissement pour la bordure gauche, 
-      droite, haute et bas dans cet ordre.
+      (entier ou vecteur) : Taille de la bordure en pixels. Si un seul entier est fourni,
+      il est utilisé sur chaque bordure. Si 2 valeurs sont fournies, c'est la taille de
+      bordure pour les bords gauche/droite et haut/bas respectivement. Si un vecteur de 4 valeurs 
+      est fourni, il donnera la taille des bords gauche, droite, haut et bas respectivement.
   pad_if_needed:
     original: |-
       (boolean): It will pad the image if smaller than the
@@ -39,7 +38,7 @@ arguments:
     translation: |-
       (booléen) : L'image sera élargie si elle est plus petite que la taille attendue
       pour éviter une exception. Étant donné que la découpe est faite après l'élargissement, 
-      le padding semble être fait à un endroit aléatoire.
+      la bordure semblera être à un endroit aléatoire.
   fill:
     original: |-
       (int or str or tuple): Pixel fill value for constant fill.

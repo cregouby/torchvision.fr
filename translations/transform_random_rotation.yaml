@@ -1,6 +1,6 @@
 title:
   original: Rotate the image by angle
-  translation: Pivote l'image d'un certain angle.
+  translation: Pivote l'image d'un angle aléatoire.
 arguments:
   img:
     original: A \code{magick-image}, \code{array} or \code{torch_tensor}.

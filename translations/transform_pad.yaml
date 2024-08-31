@@ -1,6 +1,6 @@
 title:
   original: Pad the given image on all sides with the given "pad" value
-  translation: Étend l'image sur tous les côtés avec la valeur de "fill" fournie.
+  translation: Ajoute une bordure à l'image sur tous les côtés avec la valeur de "fill" fournie.
 arguments:
   img:
     original: A \code{magick-image}, \code{array} or \code{torch_tensor}.
@@ -13,10 +13,10 @@ arguments:
       If a tuple of length 4 is provided this is the padding for the left, right,
       top and bottom borders respectively.
     translation: |-
-      (entier ou vecteur) : Taille de de l'extension en pixels. Si un seul entier est fourni,
-      il est utilisé sur chaque bordures. Si 2 valeurs sont fournies, c'est la taille de
-      bordure pour les bords gauche/droite et haut/bas respectivement. Si un vecteru de 4 valeurs 
-      est fourni, cela est la taille pour les bords gauche, droite, haut et bas respectivement.
+      (entier ou vecteur) : Taille de la bordure en pixels. Si un seul entier est fourni,
+      il est utilisé sur chaque bordure. Si 2 valeurs sont fournies, c'est la taille de
+      bordure pour les bords gauche/droite et haut/bas respectivement. Si un vecteur de 4 valeurs 
+      est fourni, il donnera la taille des bords gauche, droite, haut et bas respectivement.
   fill:
     original: |-
       (int or str or tuple): Pixel fill value for constant fill.

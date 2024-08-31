@@ -1,0 +1,32 @@
+title:
+  original: A simplified version of torchvision.utils.make_grid
+  translation: Une version simplifiée de \code{torchvision.utils.make_grid}
+arguments:
+  tensor:
+    original: tensor to arrange in grid.
+    translation: un tenseur 4D à disposer en grille.
+  scale:
+    original: whether to normalize (min-max-scale) the input tensor.
+    translation: doit-on normaliser le tenseur d'entrée (échelle min-max)
+  num_rows:
+    original: number of rows making up the grid (default 8).
+    translation: nombre de lignes dans la grille (8 par défaut).
+  padding:
+    original: amount of padding between batch images (default 2).
+    translation: largeur de bordure ajoutée entre les lots d'images (2 par défaut)
+  pad_value:
+    original: pixel value to use for padding.
+    translation: valeur des pixels de la bordure.
+description:
+  original: |
+    Arranges a batch of (image) tensors in a grid, with optional padding between
+    images. Expects a 4d mini-batch tensor of shape (B x C x H x W).
+  translation: |
+    Dispose les images d'un tenseur 4D de forme (B x C x H x W) en une grille, avec 
+    l'ajout optionnel de bordure entre les images.
+untranslatable:
+- alias
+- name
+- keyword
+- concept
+- usage
