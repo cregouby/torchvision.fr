@@ -10,7 +10,7 @@ description:
     Loads an image using \code{jpeg}, or \code{png} packages depending on the
     file extension.
   translation: |
-    Lit une image via les paquets \code{jpeg}, ou \code{png}, suivant
+    Lit une image via les paquets \code{jpeg} ou \code{png}, en fonction de 
     l'extension du fichier.
 untranslatable:
 - alias

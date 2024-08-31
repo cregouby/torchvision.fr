@@ -4,20 +4,20 @@ title:
 arguments:
   image:
     original: ': torch_tensor of shape (3, H, W) and dtype uint8.'
-    translation: ': un \code{torch_tensor} de taille (3, H, W) et de \code{dtype uint8}.'
+    translation: 'un \code{torch_tensor} de taille (3, H, W) et de \code{dtype uint8}.'
   masks:
     original: ': torch_tensor of shape (num_masks, H, W) or (H, W) and dtype bool.'
-    translation: ': un \code{torch_tensor} de taille (num_masks, H, W) ou (H, W)  et de \code{dtype bool}.'
+    translation: 'un \code{torch_tensor} de taille (num_masks, H, W) ou (H, W)  et de \code{dtype bool}.'
   alpha:
     original: ': number between 0 and 1 denoting the transparency of the masks.'
-    translation: ': une valeur entre 0 and 1 pour la transparence de masque.'
+    translation: 'une valeur entre 0 and 1 pour la transparence de masque.'
   colors:
     original: |-
       : character vector containing the colors
       of the boxes or single color for all boxes. The color can be represented as
       strings e.g. "red" or "#FF00FF". By default, viridis colors are generated for masks
     translation: |-
-      : un vecteur de chaînes de caractères des couleurs des masques,
+      un vecteur de chaînes de caractères des couleurs des masques,
       ou de la couleur unique pour tous. Les couleurs sont soit les noms, soit les
       codes des couleurs comme "red" ou "#FF00FF". Par défaut, les couleurs de la palette \code{viridis} 
       sont générées pour les masques.

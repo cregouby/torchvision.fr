@@ -19,7 +19,7 @@ arguments:
   transform:
     original: |-
       (callable, optional): A function/transform that takes in an PIL image
-      and returns a transformed version. E.g, \code{transforms_random_crop()}
+      and returns a transformed version. E.g, \code{\link[=transform_random_crop]{transform_random_crop()}}
     translation: |-
       (fonction, optionnel): Une fonction ou \code{transform} qui prend une image PIL 
       en entrée et retourne sa version transformée. Exemple \code{transforms_random_crop()}
@@ -28,8 +28,7 @@ arguments:
       (callable, optional): A function/transform that takes in the
       target and transforms it.
     translation: |-
-      (fonction, optionnel): Une fonction ou \code{transform} qui prend la cible
-      en entrée et la transforme.
+      (fonction, optionnel): Une fonction ou \code{transform} qui transforme la variable cible (les labels).
   download:
     original: |-
       (bool, optional): If true, downloads the dataset from the internet and

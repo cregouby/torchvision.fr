@@ -11,36 +11,36 @@ arguments:
       the boxes are absolute coordinates with respect to the image. In other words: \verb{0  = xmin < xmax < W} and
       \verb{0  = ymin < ymax < H}.
     translation: |-
-      : Tenseur de forme (N, 4) contenant les coordonnées des cadres au format (xmin, ymin, xmax, ymax). On note que
-      les cadres sont définis en coordonnées absolues de l'image. Autrement dit: \verb{0  <= xmin < xmax <= W} and
-      \verb{0  <= ymin < ymax <= H}.
+      un Tenseur de forme (N, 4) contenant les coordonnées des cadres au format (xmin, ymin, xmax, ymax). On note que
+      les cadres sont définis en coordonnées absolues de l'image. Autrement dit: \verb{0  <= xmin < xmax <= largeur} et
+      \verb{0  <= ymin < ymax <= hauteur}.
   labels:
     original: ': character vector containing the labels of bounding boxes.'
-    translation: ': un vecteur des labels à appliquer aux cadres'
+    translation: 'un vecteur des labels à appliquer aux cadres'
   colors:
     original: |-
       : character vector containing the colors
       of the boxes or single color for all boxes. The color can be represented as
       strings e.g. "red" or "#FF00FF". By default, viridis colors are generated for boxes.
     translation: |-
-      : un vecteur de chaînes de caractères des couleurs des cadres,
+      un vecteur de chaînes de caractères des couleurs des cadres,
       ou de la couleur unique pour tous les cadres. Les couleurs sont soit les noms, soit les
       codes des couleurs comme "red" ou "#FF00FF". Par défaut, les couleurs de la palette \code{viridis} 
       sont générées pour les cadres.
   fill:
     original: ': If \code{TRUE} fills the bounding box with specified color.'
-    translation: ': Si \code{TRUE} alors le cadre est rempli avec la couleur spécifiée.'
+    translation: 'Si \code{TRUE} alors le cadre est rempli avec la couleur spécifiée.'
   width:
     original: ': Width of text shift to the bounding box.'
-    translation: ': Largeur du décalage du texte vis-à-vis du cadre.'
+    translation: 'Largeur du décalage du texte vis-à-vis du cadre.'
   font:
     original: ': NULL for the current font family, or a character vector of length
       2 for Hershey vector fonts.'
-    translation: ': NULL pour la police de caractère courante, ou un vecteur de chaîne de caractères de longueur
+    translation: 'NULL pour la police de caractère courante, ou un vecteur de chaîne de caractères de longueur
       2 pour des polices du vecteur de Hershey.'
   font_size:
     original: ': The requested font size in points.'
-    translation: ': la taille de la police en points.'
+    translation: 'la taille de la police en points.'
 value:
   original: |
     torch_tensor of size (C, H, W) of dtype uint8: Image Tensor with bounding boxes plotted.

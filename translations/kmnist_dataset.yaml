@@ -29,7 +29,7 @@ arguments:
       (callable, optional): A function/transform that takes
       in the target and transforms it.
     translation:  |-
-      Une fonction ou transform qui prends en entrée la cible et la transforme.
+      (fonction, optionnel): Une fonction ou \code{transform} qui transforme la variable cible (les labels).
   download:
     original: |-
       (bool, optional): If true, downloads the dataset from the
