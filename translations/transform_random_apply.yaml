@@ -7,10 +7,10 @@ arguments:
     translation: Une \code{magick-image}, \code{array} ou un \code{torch_tensor}.
   transforms:
     original: '(list or tuple): list of transformations.'
-    translation: (liste ou vecteur) : liste de transformations.
+    translation: '(liste ou vecteur) : liste de transformations.'
   p:
     original: '(float): probability.'
-    translation: (réel) : probabilité.
+    translation: '(réel) : probabilité.'
 description:
   original: |
     Apply a list of transformations randomly with a given probability

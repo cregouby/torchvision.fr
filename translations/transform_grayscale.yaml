@@ -9,7 +9,8 @@ arguments:
     original: |-
       (int): (1 or 3) number of channels desired for
       output image
-    translation: (entier): 1 ou 3, nombre de canaux souhaités pour l'image de sortie.
+    translation: |-
+      (entier): 1 ou 3, nombre de canaux souhaités pour l'image de sortie.
 description:
   original: |
     Convert image to grayscale

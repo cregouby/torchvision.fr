@@ -13,7 +13,8 @@ arguments:
     translation: '(vecteur) : Vecteur de écart-types pour chaque canal.'
   inplace:
     original: '(bool,optional): Bool to make this operation in-place.'
-    translation: (booléen, optionnel) : Doit-on faire cette opération sur l'objet lui-même.
+    translation: |
+      (booléen, optionnel) : Doit-on faire cette opération sur l'objet lui-même.
 description:
   original: |
     Given mean: \verb{(mean[1],...,mean[n])} and std: \verb{(std[1],..,std[n])} for \code{n}
