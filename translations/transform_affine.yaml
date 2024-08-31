@@ -22,8 +22,8 @@ arguments:
     translation:  |-
       (paire de valeurs, optionnel): limites pour les facteurs de translation
       horizontaux et verticaux. Par exemple pour \code{translate=c(a, b)}, alors
-      le décallage hozizontal dx est pris dans -img_width * a < dx < img_width * a 
-      et le décallage vertical dy est pris dans -img_height * b < dy < img_height * b.
+      le décallage hozizontal dx est pris dans \code{-largeur * a < dx < largeur * a} 
+      et le décallage vertical dy est pris dans \code{-hauteur * b < dy < hauteur * b}.
       Pas de translation par défaut.
   scale:
     original: |-
@@ -33,7 +33,7 @@ arguments:
     translation: |-
       (paire de valeurs, optionnel): intervale du facteur d'agrandissement. Par exemple
       pour \code{scale=c(a, b)}, alors l'aggrandissement sera choisi dans
-      a <= scale <= b. Pas d'aggrandissement par défaut.
+      \code{a <= scale <= b}. Pas d'aggrandissement par défaut.
   shear:
     original: |-
       (sequence or float or int, optional): Range of degrees to select
@@ -46,10 +46,10 @@ arguments:
     translation: |-
       (valeur, paire de valeurs, ou quadruplet de valeurs, optionnel): Valeurs limites
       de cisaillement. Pour une valeur, un cisaillement paralèlle à l'axe des x sera 
-      choisit dans l'intervalle (-shear, +shear). Pour une paire de valeurs, un
-      cisaillement paralèlle à l'axe des x sera choisit dans l'intervalle \verb{(shear[1], shear[2])}.
-      Pour un quadruplet de valeurs, un cisaillement suivant l'axe des x sera choisi entre
-      \verb{(shear[1], shear[2])} et suivant l'axe des y entre \verb{(shear[3], shear[4])}.
+      choisit dans l'intervalle [-shear, +shear]. Pour une paire de valeurs, un
+      cisaillement paralèlle à l'axe des x sera choisit dans l'intervalle \verb{([shear[1], shear[2])]}.
+      Pour un quadruplet de valeurs, un cisaillement suivant l'axe des x sera choisi dans
+      \verb{[shear[1], shear[2]]} et suivant l'axe des y dans \verb{[shear[3], shear[4]]}.
       Pas de cisaillement par défaut.
   resample:
     original: |-
