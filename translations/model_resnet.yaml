@@ -76,8 +76,8 @@ section{Functions}:
     }
 
 seealso:
-  original: "Other models: \n\\code{\\link{model_alexnet}()},\n\\code{\\link{model_mobilenet_v2}()}\n"
-  translation: ~
+  original: "Other models: \n\\code{\\link{model_alexnet}()},\n\\code{\\link{model_inception_v3}()},\n\\code{\\link{model_mobilenet_v2}()},\n\\code{\\link{model_vgg}}\n"
+  translation: "Autres modèles: \n\\code{\\link{model_alexnet}()},\n\\code{\\link{model_inception_v3}()},\n\\code{\\link{model_mobilenet_v2}()},\n\\code{\\link{model_vgg}}\n"
 untranslatable:
 - alias
 - name

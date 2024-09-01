@@ -3,7 +3,7 @@ title:
     Constructs a MobileNetV2 architecture from
     \href{https://arxiv.org/abs/1801.04381}{MobileNetV2: Inverted Residuals and Linear Bottlenecks}.
   translation: |-
-    Construuit une architecture de réseau MobileNetV2 d'après 
+    Construit une architecture de réseau MobileNetV2 d'après 
     \href{https://arxiv.org/abs/1801.04381}{MobileNetV2: Inverted Residuals and Linear Bottlenecks}.
 arguments:
   pretrained:
@@ -23,11 +23,11 @@ description:
     Constructs a MobileNetV2 architecture from
     \href{https://arxiv.org/abs/1801.04381}{MobileNetV2: Inverted Residuals and Linear Bottlenecks}.
   translation: |
-    Construuit une architecture de réseau MobileNetV2 d'après
+    Construit une architecture de réseau MobileNetV2 d'après
     \href{https://arxiv.org/abs/1801.04381}{MobileNetV2: Inverted Residuals and Linear Bottlenecks}.
 seealso:
-  original: "Other models: \n\\code{\\link{model_alexnet}()},\n\\code{\\link{model_resnet}}\n"
-  translation: "Autres modèles: \n\\code{\\link{model_alexnet}()},\n\\code{\\link{model_resnet}}\n"
+  original: "Other models: \n\\code{\\link{model_alexnet}()},\n\\code{\\link{model_inception_v3}()},\n\\code{\\link{model_resnet}},\n\\code{\\link{model_vgg}}\n"
+  translation: "Autres modèles: \n\\code{\\link{model_alexnet}()},\n\\code{\\link{model_inception_v3}()},\n\\code{\\link{model_resnet}},\n\\code{\\link{model_vgg}}\n"
 untranslatable:
 - alias
 - name

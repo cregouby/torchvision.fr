@@ -23,11 +23,11 @@ description:
     AlexNet model architecture from the
     \href{https://arxiv.org/abs/1404.5997}{One weird trick...} paper.
   translation: |
-    Le modèle d'architecture AlexNettel que décrit dans le papier
+    Le modèle d'architecture AlexNet tel que décrit dans le papier
     \href{https://arxiv.org/abs/1404.5997}{One weird trick...}.
 seealso:
-  original: "Other models: \n\\code{\\link{model_mobilenet_v2}()},\n\\code{\\link{model_resnet}}\n"
-  translation: "Autres modèles: \n\\code{\\link{model_mobilenet_v2}()},\n\\code{\\link{model_resnet}}\n"
+  original: "Other models: \n\\code{\\link{model_inception_v3}()},\n\\code{\\link{model_mobilenet_v2}()},\n\\code{\\link{model_resnet}},\n\\code{\\link{model_vgg}}\n"
+  translation: "Autres modèles: \n\\code{\\link{model_inception_v3}()},\n\\code{\\link{model_mobilenet_v2}()},\n\\code{\\link{model_resnet}},\n\\code{\\link{model_vgg}}\n"
 untranslatable:
 - alias
 - name

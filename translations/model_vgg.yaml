@@ -60,6 +60,9 @@ section{Functions}:
     \item \code{model_vgg19_bn()}: Le modèle VGG 19-couches (configuration "E") avec normalisation par lots
 
     }
+seealso:
+  original: "Other models: \n\\code{\\link{model_alexnet}()},\n\\code{\\link{model_inception_v3}()},\n\\code{\\link{model_mobilenet_v2}()},\n\\code{\\link{model_resnet}}\n"
+  translation: "Autres modèles: \n\\code{\\link{model_alexnet}()},\n\\code{\\link{model_inception_v3}()},\n\\code{\\link{model_mobilenet_v2}()},\n\\code{\\link{model_resnet}}\n"
 untranslatable:
 - alias
 - name
