@@ -4,11 +4,11 @@ title:
 arguments:
   image:
     original: |-
-      \code{torch_tensor()} of shape (1, W, H) for grayscale image or (3, W, H) for color image,
-      of type \code{torch_uint8()} to display
+      \code{torch_tensor()} of shape (1, W, H) for grayscale image or (3, W, H) for
+      color image to display
     translation: |-
       Un \code{torch_tensor()} de taille (1, W, H) pour une image en niveau de gris, ou (3, W, H) 
-      pour une image en couleur, et de \code{dtype torch_uint8()} à afficher
+      pour une image en couleur à afficher
   browser:
     original: argument passed to \link{browseURL}
     translation: argument passé à \link{browseURL}
@@ -18,7 +18,7 @@ description:
   translation: |
     Affiche l'image d'un tenseur dans le navigateur
 seealso:
-  original: "Other display: \n\\code{\\link{draw_bounding_boxes}()},\n\\code{\\link{draw_keypoints}()},\n\\code{\\link{draw_segmentation_masks}()},\n\\code{\\link{tensor_image_display}()},\n\\code{\\link{vision_make_grid}()}\n"
+  original: "Other image display: \n\\code{\\link{draw_bounding_boxes}()},\n\\code{\\link{draw_keypoints}()},\n\\code{\\link{draw_segmentation_masks}()},\n\\code{\\link{tensor_image_display}()},\n\\code{\\link{vision_make_grid}()}\n"
   translation: "Autres afficheurs: \n\\code{\\link{draw_bounding_boxes}()},\n\\code{\\link{draw_keypoints}()},\n\\code{\\link{draw_segmentation_masks}()},\n\\code{\\link{tensor_image_display}()},\n\\code{\\link{vision_make_grid}()}\n"
 untranslatable:
 - alias

@@ -25,7 +25,7 @@ description:
     Dispose les images d'un tenseur 4D de forme (B x C x H x W) en une grille, avec 
     l'ajout optionnel de bordure entre les images.
 seealso:
-  original: "Other display: \n\\code{\\link{draw_bounding_boxes}()},\n\\code{\\link{draw_keypoints}()},\n\\code{\\link{draw_segmentation_masks}()},\n\\code{\\link{tensor_image_browse}()},\n\\code{\\link{tensor_image_display}()}\n"
+  original: "Other image display: \n\\code{\\link{draw_bounding_boxes}()},\n\\code{\\link{draw_keypoints}()},\n\\code{\\link{draw_segmentation_masks}()},\n\\code{\\link{tensor_image_browse}()},\n\\code{\\link{tensor_image_display}()}\n"
   translation: "Autres afficheurs: \n\\code{\\link{draw_bounding_boxes}()},\n\\code{\\link{draw_keypoints}()},\n\\code{\\link{draw_segmentation_masks}()},\n\\code{\\link{tensor_image_browse}()},\n\\code{\\link{tensor_image_display}()}\n"
 untranslatable:
 - alias

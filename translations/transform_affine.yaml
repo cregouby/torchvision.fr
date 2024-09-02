@@ -13,44 +13,26 @@ arguments:
       (numérique): angle de rotation en degrés, dans le sens anti-horaire
   translate:
     original: |-
-      (tuple, optional): tuple of maximum absolute fraction for
-      horizontal and vertical translations. For example \code{translate=c(a, b)}, then
-      horizontal shift is randomly sampled in the range
-      -img_width * a < dx < img_width * a and vertical shift is randomly sampled
-      in the range -img_height * b < dy < img_height * b. Will not translate by
-      default.
+      (sequence of int) – horizontal and vertical translations
+      (post-rotation translation)
     translation:  |-
-      (paire numérique, optionnel): limites pour les facteurs de translation
-      horizontaux et verticaux. Par exemple pour \code{translate=c(a, b)}, alors
-      le décallage hozizontal dx est pris dans \code{-largeur * a < dx < largeur * a} 
-      et le décallage vertical dy est pris dans \code{-hauteur * b < dy < hauteur * b}.
-      Pas de translation par défaut.
+      (paire numérique): translation horizontalle et verticale. 
+      (À lieu après la rotation)
   scale:
-    original: |-
-      (tuple, optional): scaling factor interval, e.g c(a, b), then
-      scale is randomly sampled from the range a <= scale <= b. Will keep
-      original scale by default.
+    original: (float) – overall scale
     translation: |-
-      (paire numérique, optionnel): intervale du facteur d'agrandissement. Par exemple
-      pour \code{scale=c(a, b)}, alors l'aggrandissement sera choisi dans
-      \code{a <= scale <= b}. Pas d'aggrandissement par défaut.
+      (numérique): facteur d'agrandissement.
   shear:
     original: |-
-      (sequence or float or int, optional): Range of degrees to select
-      from. If shear is a number, a shear parallel to the x axis in the range
-      (-shear, +shear) will be applied. Else if shear is a tuple or list of 2
-      values a shear parallel to the x axis in the range \verb{(shear[1], shear[2])}
-      will be applied. Else if shear is a tuple or list of 4 values, a x-axis
-      shear in \verb{(shear[1], shear[2])} and y-axis shear in \verb{(shear[3], shear[4])}
-      will be applied. Will not apply shear by default.
+      (float or sequence) – shear angle value in degrees between -180 to 180,
+      clockwise direction. If a sequence is specified, the first value corresponds
+      to a shear parallel to the x-axis, while the second value corresponds to a
+      shear parallel to the y-axis.
     translation: |-
-      (valeur, paire de valeurs, ou quadruplet de valeurs, optionnel): Valeurs limites
-      de cisaillement. Pour une valeur, un cisaillement paralèlle à l'axe des x sera 
-      choisit dans l'intervalle [-shear, +shear]. Pour une paire numérique, un
-      cisaillement paralèlle à l'axe des x sera choisit dans l'intervalle \verb{[shear[1], shear[2]]}.
-      Pour un quadruplet de valeurs, un cisaillement suivant l'axe des x sera choisi dans
-      \verb{[shear[1], shear[2]]} et suivant l'axe des y dans \verb{[shear[3], shear[4]]}.
-      Pas de cisaillement par défaut.
+      (valeur, paire de valeurs): Valeur de cisaillement en degrés dans
+      l'intervalle \verb{[-180, 180]}, dans le sens horaire. Pour une paire numérique, 
+      \verb{shear[1]} fixe le cisaillement paralèlle à l'axe des x, et \verb{shear[2]} 
+      fixe le cisaillement paralèlle à l'axe des y.
   resample:
     original: |-
       (int, optional): An optional resampling filter. See interpolation
