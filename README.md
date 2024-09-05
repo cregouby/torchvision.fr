@@ -1,4 +1,4 @@
-# torchvision.fr <img src='https://torch.mlverse.org/css/images/hex/torchvision.png' align="right" style="width: 15%"/>
+# torchvision.fr <img src='images/logo-fr.png' align="right" style="width: 15%"/>
 
 <!-- badges: start -->
 
@@ -24,8 +24,9 @@ Voici comment utiliser {torchvision} avec l'aide en français :
 # configure la session en langue française
 Sys.setenv(LANGUAGE = "fr")
 
-# charge la librairie torchvision en traduction française
+# charge la librairie torchvision en traduction française et {torchvision}
 library(torchvision.fr)
+library(torchvision)
 
 # consulte l'aide normalement
 ?transform_affine

@@ -20,7 +20,7 @@ note:
     values are \strong{not} mapped exactly. If converted back and forth, this
     mismatch has no effect.
   translation: |
-    La conversion entre entiers de précisions différentes, les valeurs maximum ne sont 
+    Lors de la conversion entre entiers de précisions différentes, les valeurs maximum ne sont 
     \strong{pas} converties exactement. Après une conversion et son inverse, 
     cette différence n'a pas d'impact.
 seealso:
