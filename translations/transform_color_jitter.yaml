@@ -43,8 +43,8 @@ arguments:
     translation: |-
       (réel ou paire de réels (min, max)): Limites de modification de la teinte.
       \code{hue_factor} est choisi uniformément dans \verb{[-hue, hue]} ou dans 
-      \verb{[min, max]}. Les valeurs doivent être 0<= hue <= 0.5 ou 
-      -0.5 <= min <= max <= 0.5.
+      \verb{[min, max]}. Les valeurs doivent être 0 ≤ hue ≤ 0.5 ou 
+      -0.5 ≤ min ≤ max ≤ 0.5.
 description:
   original: |
     Randomly change the brightness, contrast and saturation of an image

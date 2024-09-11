@@ -22,7 +22,7 @@ description:
     Arranges a batch of (image) tensors in a grid, with optional padding between
     images. Expects a 4d mini-batch tensor of shape (B x C x H x W).
   translation: |
-    Dispose les images d'un tenseur 4D de forme (B x C x H x W) en une grille, avec 
+    Dispose les images d'un tenseur 4D de forme (B × C × H × W) en une grille, avec 
     l'ajout optionnel de bordure entre les images.
 seealso:
   original: "Other image display: \n\\code{\\link{draw_bounding_boxes}()},\n\\code{\\link{draw_keypoints}()},\n\\code{\\link{draw_segmentation_masks}()},\n\\code{\\link{tensor_image_browse}()},\n\\code{\\link{tensor_image_display}()}\n"

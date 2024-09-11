@@ -11,7 +11,7 @@ arguments:
     translation: Une \code{magick-image}, \code{array} ou un \code{torch_tensor}.
   transformation_matrix:
     original: '(Tensor): tensor \verb{[D x D]}, D = C x H x W.'
-    translation: '(Tenseur): un tenseur \verb{[D x D]}, avec D = C x H x W.'
+    translation: '(Tenseur): un tenseur \verb{[D × D]}, avec D = C × H × W.'
   mean_vector:
     original: '(Tensor): tensor \link{D}, D = C × H × W.'
     translation: '(Tenseur): un tenseur \verb{[D]}, avec D = C × H × W.'

@@ -4,7 +4,7 @@ title:
 arguments:
   image:
     original: ': Tensor of shape (C x H x W) and dtype uint8.'
-    translation: Un Tenseur de forme (C x H x W) et de dtype \code{uint8}.
+    translation: Un Tenseur de forme (C × H × W) et de dtype \code{uint8}.
   boxes:
     original: |-
       : Tensor of size (N, 4) containing bounding boxes in (xmin, ymin, xmax, ymax) format. Note that
@@ -12,8 +12,8 @@ arguments:
       \verb{0  = ymin < ymax < H}.
     translation: |-
       un Tenseur de forme (N, 4) contenant les coordonnées des cadres au format (xmin, ymin, xmax, ymax). On note que
-      les cadres sont définis en coordonnées absolues de l'image. Autrement dit: \verb{0  <= xmin < xmax <= largeur} et
-      \verb{0  <= ymin < ymax <= hauteur}.
+      les cadres sont définis en coordonnées absolues de l'image. Autrement dit: \verb{0  ≤ xmin < xmax ≤ largeur} et
+      \verb{0  ≤ ymin < ymax ≤ hauteur}.
   labels:
     original: ': character vector containing the labels of bounding boxes.'
     translation: 'un vecteur des labels à appliquer aux cadres'
