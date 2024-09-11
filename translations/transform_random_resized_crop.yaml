@@ -17,7 +17,7 @@ arguments:
       La taille de sortie suivra. Si c'est un entier,
       le petit bord de l'image aura la taille spécifiée.
       c'est à dire que si \code{hauteur > largeur} alors l'image sera découpée à
-      \code{size * hauteur / largeur, size}.
+      \code{[size × hauteur / largeur, size]}.
   scale:
     original: '(tuple of float): range of size of the origin size cropped'
     translation: |
@@ -54,8 +54,8 @@ details:
     ratio is made. This crop is finally resized to given size. This is
     popularly used to train the Inception networks.
   translation: |
-    Découpe l'image avec une taille aléatoire (par défault entre 0.08 et 1.0) de la 
-    taille initiale, avec un rapport de format (par défaut entre 3/4 et 4/3) de 
+    Découpe l'image avec une taille aléatoire (par défault entre 0.08 et 1.0 × la 
+    taille initiale), avec un rapport de format (par défaut entre 3/4 et 4/3) de 
     l'original. La découpe est finalement redimensionnée au format de \code{size}. C'est la 
     transformation couremment utilisée pour l'entrainement des réseaux Inception.
 seealso:

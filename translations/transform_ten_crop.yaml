@@ -18,7 +18,7 @@ arguments:
       La taille de sortie suivra. Si c'est un entier,
       le petit bord de l'image aura la taille spécifiée.
       c'est à dire que si \code{hauteur > largeur} alors l'image sera découpée à
-      \code{size * hauteur / largeur, size}.
+      \code{[size × hauteur / largeur, size]}.
   vertical_flip:
     original: '(bool): Use vertical flipping instead of horizontal'
     translation: |

@@ -48,7 +48,7 @@ arguments:
       for the area outside the transform in the output image is always 0.
     translation: |-
       (triplet d'entiers ou entier, optionnel): Couleur de remplissage de la zone
-      en dehors de l'image transformée (Pillow>=5.0.0). Le triplet pour une image RVB,
+      en dehors de l'image transformée (Pillow ≥ 5.0.0). Le triplet pour une image RVB,
       l'entier pour une image N&B.
       Non supporté pour les entrées de type tenseurs, pour lesquels le remplissage 
       en dehors de la zone d'image se fait toujours à 0.

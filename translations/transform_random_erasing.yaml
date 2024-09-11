@@ -23,7 +23,7 @@ arguments:
       R, G, B channels respectively.
       If a str of 'random', erasing each pixel with random values.
     translation: |-
-      valeur d'éraseage. 0 par défaut. Si un entier unique, il est utilisé pour effacer 
+      valeur des pixels effacés. 0 par défaut. Si un entier unique, il est utilisé pour effacer 
       tous les pixels. Si un tenseur de taille 3, il est utilisé pour effacer les canaux 
       R, V et B respectivement. Si la valeur est 'random', chaque pixel 
       sera éffacé avec des valeurs aléatoires.

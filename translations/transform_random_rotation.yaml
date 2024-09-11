@@ -13,7 +13,7 @@ arguments:
     translation: |-
       (paire de numérique): Plage d'angle en degrés dans laquelle choisir 
       l'angle. Si c'est une seule valuer plutôt que \code{c(min, max)}, alors la plage est 
-      \code{c(-degrees, degrees)}
+      \code{[-degrees, degrees]}
   resample:
     original: |-
       (int, optional): An optional resampling filter. See interpolation
@@ -50,7 +50,7 @@ arguments:
       (triplet de numérique) : Valeur de remplissage pour le remplissage de la 
       zone en dehors de l'image après rotation. Par défaut, c'est 0. Si un vecteur de 
       longueur 3 est fourni, il est utilisé pour remplir les canaux R, V, B
-      respectivement. Cette option n'est supportée que si Pillow >= 5.2.0. Seule la valeur
+      respectivement. Cette option n'est supportée que si Pillow ≥ 5.2.0. Seule la valeur
       entière est prise en charge pour les Tensors.
 description:
   original: |

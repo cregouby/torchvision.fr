@@ -44,10 +44,10 @@ arguments:
       for Pillow>=5.2.0. This option is not supported for Tensor input. Fill
       value for the area outside the transform in the output image is always 0.
     translation: |-
-      (triplet d'entiers, entier ou réel) : Valeur de remplissage pour le remplissage de la 
+      (triplet d'entiers, entier ou réel) : Valeur des pixels pour le remplissage de la 
       zone en dehors de l'image après rotation. Par défaut, c'est 0. Si un vecteur de 
       longueur 3 est fourni, il est utilisé pour remplir les canaux R, V, B
-      respectivement. Cette option n'est supportée que si Pillow >= 5.2.0. Seule la valeur
+      respectivement. Cette option n'est supportée que si Pillow ≥ 5.2.0. Seule la valeur
       entière est prise en charge pour les Tensors.
 description:
   original: |

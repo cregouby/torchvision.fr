@@ -24,9 +24,9 @@ arguments:
     translation: |-
       (paire numérique, optionnel): valeurs de la fraction maximum absolue de translation
       horizontale et verticale. Par exemple, pour \code{translate=c(a, b)}, la translation
-      horizontale sera choisie aléatoirement dans -largeur_image × a < dx < largeur_image × a,
+      horizontale sera choisie aléatoirement dans \code{-largeur_image × a < dx < largeur_image × a},
       et la translation verticale sera choisie aléatoirement dans 
-      -hauteur_image × b < dx < hauteur_image × b. Pas de translation par défaut.
+      \code{-hauteur_image × b < dx < hauteur_image × b}. Pas de translation par défaut.
   scale:
     original: |-
       (tuple, optional): scaling factor interval, e.g c(a, b), then
@@ -34,7 +34,7 @@ arguments:
       original scale by default.
     translation: |-
       (paire numérique, optionnel): intervale pour le choix du facteur d'échelle, ex: Pour c(a, b), 
-      le facteur d'échelle est choisi aléatoirement dans  a <= scale <= b. Pas de 
+      le facteur d'échelle est choisi aléatoirement dans  a ≤ scale ≤ b. Pas de 
       changement d'échelle par défaut.
   shear:
     original: |-
@@ -47,7 +47,7 @@ arguments:
       will be applied. Will not apply shear by default.
     translation: |-
       (valeur, paire de valeurs, ou quadruplet de valeurs, optionnel): Valeurs limites
-      de cisaillement. Pour une valeur, un cisaillement paralèlle à l'axe des x sera 
+      de cisaillement. Pour une valeur simple, un cisaillement paralèlle à l'axe des x sera 
       choisit dans l'intervalle [-shear, +shear]. Pour une paire numérique, un
       cisaillement paralèlle à l'axe des x sera choisit dans l'intervalle \verb{[shear[1], shear[2]]}.
       Pour un quadruplet de valeurs, un cisaillement suivant l'axe des x sera choisi dans
@@ -68,7 +68,7 @@ arguments:
     translation: |-
       (triplet d'entiers ou entier): couleurs de remplissage facultatives (triplet pour les images RVB
       et entier pour les images en niveau de gris) pour l'aire extérieure à la transformation
-      dans l'image de sortie (Pillow>=5.0.0). Cette option n'est pas prise en charge pour 
+      dans l'image de sortie (Pillow ≥ 5.0.0). Cette option n'est pas prise en charge pour 
       les entrées tenseur. La valeur de remplissage pour l'aire extérieure à la transformation 
       dans l'image de sortie est toujours 0.
 description:

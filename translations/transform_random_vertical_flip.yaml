@@ -10,7 +10,7 @@ arguments:
       (float): probability of the image being flipped.
       Default value is 0.5
     translation: |-
-      (réel): probabilité que l'image soit transformée. 0,5 par défaut.
+      (réel): probabilité de retournement. 0,5 par défaut.
 description:
   original: |
     The image can be a PIL Image or a torch Tensor, in which case it is expected

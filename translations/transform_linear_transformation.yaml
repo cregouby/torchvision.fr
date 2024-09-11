@@ -13,8 +13,8 @@ arguments:
     original: '(Tensor): tensor \verb{[D x D]}, D = C x H x W.'
     translation: '(Tenseur): un tenseur \verb{[D x D]}, avec D = C x H x W.'
   mean_vector:
-    original: '(Tensor): tensor \link{D}, D = C x H x W.'
-    translation: '(Tenseur): un tenseur \verb{[D]}, avec D = C x H x W.'
+    original: '(Tensor): tensor \link{D}, D = C × H × W.'
+    translation: '(Tenseur): un tenseur \verb{[D]}, avec D = C × H × W.'
 description:
   original: |
     Given \code{transformation_matrix} and \code{mean_vector}, will flatten the
@@ -34,7 +34,7 @@ section{Applications}:
     perform SVD on this matrix and pass it as \code{transformation_matrix}.
   translation: |
     transformation d'égalisation : Supposons que X soit un vecteur colonne de valeurs 
-    centrées à zéro. Alors, on calcule la matrice de covariance des données \verb{[D x D]} 
+    centrées à zéro. Alors, on calcule la matrice de covariance des données \verb{[D × D]} 
     avec torch.mm(X.t(), X), on effectuez le calcul des valeurs propre par une SVD sur cette
     matrice et on la passe comme \code{transformation_matrix}.
 
