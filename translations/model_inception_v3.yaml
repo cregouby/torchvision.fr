@@ -3,20 +3,20 @@ title:
   translation: Le modèle Inception v3
 arguments:
   pretrained:
-    original: '(bool): If True, returns a model pre-trained on ImageNet'
+    original: '(bool): If \code{TRUE}, returns a model pre-trained on ImageNet'
     translation: '(booléen): Doit-on renvoyer un modèle préentraîné sur ImageNet.'
   progress:
-    original: '(bool): If True, displays a progress bar of the download to stderr'
+    original: '(bool): If \code{TRUE}, displays a progress bar of the download to
     translation: |-
       (booléen): Doit-on afficher une barre d'avancement du téléchargement.
   '...':
     original: |-
       Used to pass keyword arguments to the Inception module:
       \itemize{
-      \item aux_logits (bool): If True, add an auxiliary branch that can improve training.
-      Default: \emph{True}
-      \item transform_input (bool): If True, preprocesses the input according to the method with which it
-      was trained on ImageNet. Default: \emph{False}
+      \item aux_logits (bool): If \code{TRUE}, add an auxiliary branch that can improve training.
+      Default: \emph{TRUE}
+      \item transform_input (bool): If \code{TRUE}, preprocess the input according to the method with which it
+      was trained on ImageNet. Default: \emph{FALSE}
       }
     translation: |-
       Sert à faire passer des paramêtres au module Inception:
@@ -38,7 +38,7 @@ note:
     \strong{Important}: In contrast to the other models the inception_v3 expects tensors with a size of
     N x 3 x 299 x 299, so ensure your images are sized accordingly.
   translation: |
-    \strong{Important}:À l'inverse des autres modèles, le modèle inception_v3 attend des tenseurs de taille
+    \strong{Important} : À l'inverse des autres modèles, le modèle inception_v3 attend des tenseurs de taille
     N × 3 × 299 × 299, donc assurez-vous que vos images sont redimensionnées correctement.
 seealso:
   original: "Other models: \n\\code{\\link{model_alexnet}()},\n\\code{\\link{model_mobilenet_v2}()},\n\\code{\\link{model_resnet}},\n\\code{\\link{model_vgg}}\n"

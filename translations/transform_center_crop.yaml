@@ -8,9 +8,9 @@ arguments:
   size:
     original: |-
       (sequence or int): Desired output size of the crop. If size is
-      an int instead of sequence like (h, w), a square crop (size, size) is
+      an int instead of sequence like c(h, w), a square crop (size, size) is
       made. If provided a tuple or list of length 1, it will be interpreted as
-      \verb{(size, size)}.
+      \code{c(size, size)}.
     translation: |-
       (paire d'entiers ou entier): La taille de l'image désirée après détourage.
       Pour un entier, l'image résultat sera carrée de taille \code{c(size, size)}.
