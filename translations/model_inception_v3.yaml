@@ -7,6 +7,7 @@ arguments:
     translation: '(booléen): Doit-on renvoyer un modèle préentraîné sur ImageNet.'
   progress:
     original: '(bool): If \code{TRUE}, displays a progress bar of the download to
+      stderr'
     translation: |-
       (booléen): Doit-on afficher une barre d'avancement du téléchargement.
   '...':
