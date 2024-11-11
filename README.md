@@ -11,9 +11,8 @@ Le paquet d'internationalisation de **{torchvision}** en français (fr_FR)
 Vous pouvez installer la version de development de **{torchvision.fr}** depuis [GitHub](https://github.com/) via:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("eliocamp/rhelpi18n")
-devtools::install_github("cregouby/torchvision.fr")
+# install.packages("pak")
+pak::pak("cregouby/torchvision.fr")
 ```
 
 ## Exemple
